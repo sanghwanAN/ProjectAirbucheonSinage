@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="88" viewBox="0 0 640 88">
+    <defs>
+        <style>
+            .cls-6{fill:#fff;font-size:27px;font-family:NanumSquareB,NanumSquare}.cls-7{fill:#333;font-size:24px;font-family:Rubik-Bold,Rubik;font-weight:700}
+        </style>
+    </defs>
+    <g id="바" transform="translate(-25 -1233)">
+        <path id="사각형_13" fill="#fff" d="M0 0H431V47H0z" transform="translate(141 1274)"/>
+        <path id="사각형_12" fill="#34a7f9" d="M0 0H160V38H0z" transform="translate(25 1233)"/>
+        <path id="패스_4" fill="#41cd51" d="M0 0h160v38H0z" transform="translate(185 1233)"/>
+        <path id="패스_5" fill="#f6b150" d="M0 0h160v38H0z" transform="translate(345 1233)"/>
+        <path id="패스_6" fill="#f66968" d="M0 0h160v38H0z" transform="translate(505 1233)"/>
+        <text id="좋음" class="cls-6" transform="translate(105 1260)">
+            <tspan x="-24.57" y="0">좋음</tspan>
+        </text>
+        <text id="보통" class="cls-6" transform="translate(265 1260)">
+            <tspan x="-24.57" y="0">보통</tspan>
+        </text>
+        <text id="나쁨" class="cls-6" transform="translate(425 1260)">
+            <tspan x="-24.57" y="0">나쁨</tspan>
+        </text>
+        <text id="매우나쁨" class="cls-6" transform="translate(585 1260)">
+            <tspan x="-49.14" y="0">매우나쁨</tspan>
+        </text>
+        <text id="_15" class="cls-7" transform="translate(185 1296)">
+            <tspan x="-13.716" y="0">15</tspan>
+        </text>
+        <text id="_35" class="cls-7" transform="translate(339 1296)">
+            <tspan x="-15.66" y="0">35</tspan>
+        </text>
+        <text id="_75" class="cls-7" transform="translate(505 1296)">
+            <tspan x="-14.628" y="0">75</tspan>
+        </text>
+    </g>
+</svg>

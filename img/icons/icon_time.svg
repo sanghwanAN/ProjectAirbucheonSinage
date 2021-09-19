@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="icon_time" transform="translate(-185 -134)">
+        <g id="타원_9" class="cls-1" transform="translate(185 134)">
+            <circle cx="26" cy="26" r="26"/>
+            <circle cx="26" cy="26" r="24" fill="none"/>
+        </g>
+        <circle id="타원_10" cx="4.5" cy="4.5" r="4.5" fill="#fff" transform="translate(207 156)"/>
+        <path id="선_3" d="M0 17.105L4.789 0" class="cls-1" transform="translate(211.342 143.237)"/>
+        <path id="선_4" d="M10.947 13.684L0 0" class="cls-1" transform="translate(212.026 159.658)"/>
+    </g>
+</svg>

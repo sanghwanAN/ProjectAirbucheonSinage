@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100.667" height="100.186" viewBox="0 0 100.667 100.186">
+    <defs>
+        <style>
+            .cls-1{fill:#404040}.cls-4{fill:#d98e2c}
+        </style>
+    </defs>
+    <g id="icon_cloth" transform="translate(-102.667 -1418.48)">
+        <path id="패스_58" d="M122.333 1434.667L102.667 1454l13 16 10.667-8.667 2-23.333z" class="cls-1"/>
+        <path id="패스_59" d="M108.667 1434.667L128.333 1454l-13 16-10.667-8.667-2-23.333z" class="cls-1" transform="translate(75)"/>
+        <path id="패스_57" fill="#7bc95a" d="M141 1430.333s2.328 10.333 12 10.333 10.333-10.333 10.333-10.333l20.333 4.333v84h-61.333v-84z"/>
+        <path id="패스_60" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" d="M120.333 1420.333s16.75 4.667 33.333 4.667 33-4.667 33-4.667"/>
+        <path id="사각형_62" d="M0 0H5V15H0z" class="cls-4" transform="translate(128 1420)"/>
+        <path id="사각형_63" d="M0 0H5V15H0z" class="cls-4" transform="translate(173 1420)"/>
+        <path id="사각형_64" d="M0 0H14V4H0z" class="cls-1" transform="translate(162 1458)"/>
+    </g>
+</svg>

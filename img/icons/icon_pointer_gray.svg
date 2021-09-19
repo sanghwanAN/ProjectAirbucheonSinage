@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.453" height="54.12" viewBox="0 0 37.453 54.12">
+    <defs>
+        <filter id="xdmadu0b1a" width="37.453" height="54.12" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="lwc09iezyb" width="24.968" height="24.968" x="6" y="5.12" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-2"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#xdmadu0b1a)" transform="translate(-58 -174) translate(58 174)">
+            <path fill="#a1a1a1" d="M5.351 31.835a18.726 18.726 0 1 1 26.119.612L18.593 54.12z"/>
+        </g>
+        <g filter="url(#lwc09iezyb)" transform="translate(-58 -174) translate(58 174)">
+            <circle cx="12.484" cy="12.484" r="12.484" fill="#fff" transform="translate(6 5.12)"/>
+        </g>
+    </g>
+</svg>

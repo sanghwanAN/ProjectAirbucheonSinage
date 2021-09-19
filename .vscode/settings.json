@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  // "prettier.javascriptEnable": ["javascript", "javascriptreact"],
+  "prettier.printWidth": 100
+}

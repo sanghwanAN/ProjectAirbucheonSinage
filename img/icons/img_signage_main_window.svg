@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105.494" height="72" viewBox="0 0 105.494 72">
+    <defs>
+        <style>
+            .cls-3,.cls-5{fill:none}.cls-3{stroke-width:4px;stroke:#2cc1ff;stroke-linecap:round}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="icon_window" transform="translate(-105.173 -1440.412)">
+        <g id="사각형_65" fill="none" stroke="#b27474" stroke-width="4px">
+            <path d="M0 0H48V72H0z" class="cls-4" transform="translate(119.667 1440.412)"/>
+            <path d="M2 2H46V70H2z" class="cls-5" transform="translate(119.667 1440.412)"/>
+        </g>
+        <g id="사각형_66" fill="#f6f6f6" stroke="#b27474" stroke-width="4px">
+            <path d="M0 0H48V72H0z" class="cls-4" transform="translate(162.667 1440.412)"/>
+            <path d="M2 2H46V70H2z" class="cls-5" transform="translate(162.667 1440.412)"/>
+        </g>
+        <path id="패스_61" d="M101 1459.9a17.75 17.75 0 0 0 11.934 5.036c7.194 0 8.629-8.735 15.423-8.735s9.976 3.7 9.976 3.7" class="cls-3" transform="translate(7 4.644)"/>
+        <path id="패스_62" d="M101 1459.9a17.75 17.75 0 0 0 11.934 5.036c7.194 0 8.629-8.735 15.423-8.735s9.976 3.7 9.976 3.7" class="cls-3" transform="translate(7 15.907)"/>
+        <path id="패스_63" d="M101 1459.9a17.75 17.75 0 0 0 11.934 5.036c7.194 0 8.629-8.735 15.423-8.735s9.976 3.7 9.976 3.7" class="cls-3" transform="translate(7 27.35)"/>
+    </g>
+</svg>
