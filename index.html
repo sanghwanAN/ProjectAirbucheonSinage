@@ -28,9 +28,7 @@
       strong {
         font-weight: normal;
       }
-      body {
-        margin: 20px;
-      }
+
       h1 {
         margin: 0 0 10px 0;
         font-weight: normal;
@@ -42,6 +40,9 @@
       a:hover {
         text-decoration: underline;
       }
+      .puble-lst {
+        margin: 0 30px;
+      }
       .list_w p.tit {
         padding-bottom: 3px;
         background: #666;
@@ -51,21 +52,26 @@
         line-height: 40px;
         text-align: center;
       }
-      .codinglist {
+      .codinglist-tbl-wrap {
         width: 100%;
+        overflow-x: auto;
       }
-      .codinglist th {
+      .codinglist-tbl {
+        width: 100%;
+        max-width: 760px;
+      }
+      .codinglist-tbl th {
         background: #efefef;
         color: #333;
       }
-      .codinglist th,
-      .codinglist td {
+      .codinglist-tbl th,
+      .codinglist-tbl td {
         border: 1px solid #ccc;
         vertical-align: middle;
         padding: 10px;
         font-size: 14px;
       }
-      .codinglist td:last-child {
+      .codinglist-tbl td:last-child {
         text-align: left;
       }
 
@@ -123,7 +129,7 @@
         font-size: 12px;
         font-weight: bold;
       }
-      .codinglist .link-url {
+      .codinglist-tbl .link-url {
         padding-left: 20px;
       }
       .guide-notice {
@@ -131,216 +137,224 @@
         color: tomato;
         vertical-align: middle;
       }
+
+      @media screen and (min-width: 750px) {
+        .puble-lst {
+          margin: 0 60px;
+          padding-top: 30px;
+        }
+        .codinglist-tbl {
+          width: 100%;
+          max-width: none;
+        }
+      }
     </style>
     <!-- jquery -->
   </head>
 
   <body id="">
-    <p class="guide-desc">2020-03-05 : 사이니지 화면 리스트</p>
+    <div class="puble-lst">
+      <p class="guide-desc">2021-03-05 : 사이니지 화면 리스트</p>
 
-    <div class="list_w">
-      <p class="tit">사이니지(세로형) 화면</p>
-      <table class="codinglist">
-        <colgroup>
-          <col style="width: 18%" />
-          <col style="width: 16%" />
-          <col />
-          <col style="width: 24%" />
-          <col style="width: 5%" />
-        </colgroup>
-        <thead>
-          <tr>
-            <th class="ta-c">1DEpth</th>
-            <th class="ta-c">2DEpth</th>
-            <th class="ta-c">url</th>
-            <th class="ta-c">비고</th>
-            <th class="ta-c">date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="ta-c" rowspan="6">메인</td>
-            <td class="ta-c">종합</td>
-            <td class="link-url">
-              <a href="./html/signage_main.html" target="_blank">./html/signage_main.html</a>
-            </td>
-            <td rowspan="6"></td>
-            <td class="ta-c" rowspan="6">03-05</td>
-          </tr>
-          <tr>
-            <td class="ta-c">미세먼지 <strong>좋음</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_good.html" target="_blank">./html/signage_good.html</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c">미세먼지 <strong>보통</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_normal.html" target="_blank">./html/signage_normal.html</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c">미세먼지 <strong>나쁨</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_bad.html" target="_blank">./html/signage_bad.html</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c">미세먼지 <strong>매우 나쁨</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_verybad.html" target="_blank">./html/signage_verybad.html</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c"><strong>점검중</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_check.html" target="_blank">./html/signage_check.html</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c" rowspan="4">서브01</td>
-            <td class="ta-c"><strong>좋음</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_sub.html" target="_blank">./html/signage_sub.html</a>
-            </td>
-            <td rowspan="4"></td>
-            <td class="ta-c" rowspan="4">03-08</td>
-          </tr>
-          <tr>
-            <td class="ta-c"><strong>보통</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_sub_normal.html" target="_blank"
-                >./html/signage_sub_normal.html</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c"><strong>나쁨</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_sub_bad.html" target="_blank">./html/signage_sub_bad.html</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c"><strong>매우 나쁨</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_sub_verybad.html" target="_blank"
-                >./html/signage_sub_verybad.html</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c" rowspan="4">서브02</td>
-            <td class="ta-c">지도 <strong>좋음</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_sub02.html" target="_blank">./html/signage_sub02.html</a>
-            </td>
-            <td rowspan="4"></td>
-            <td class="ta-c" rowspan="4">03-08</td>
-          </tr>
-          <tr>
-            <td class="ta-c">지도 <strong>보통</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_sub02_normal.html" target="_blank"
-                >./html/signage_sub02_normal.html</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c">지도 <strong>나쁨</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_sub02_bad.html" target="_blank"
-                >./html/signage_sub02_bad.html</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c">지도 <strong>매우 나쁨</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_sub02_verybad.html" target="_blank"
-                >./html/signage_sub02_verybad.html</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td class="ta-c" rowspan="2">서브03</td>
-            <td class="ta-c">미세먼지 측정원리</td>
-            <td class="link-url">
-              <a href="./html/signage_sub03_1.html" target="_blank">./html/signage_sub03_1.html</a>
-            </td>
-            <td class="ta-c"></td>
-            <td class="ta-c" rowspan="2">03-09</td>
-          </tr>
-          <tr>
-            <td class="ta-c">특화단지 8개소 미세먼지 현황</td>
-            <td class="link-url">
-              <a href="./html/signage_sub03_2.html" target="_blank">./html/signage_sub03_2.html</a>
-            </td>
-            <td>
-              <ul class="dash-lst">
-                <li>슬라이드 8번째꺼 작업중</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="list_w">
+        <p class="tit">사이니지(세로형) 화면</p>
+        <div class="codinglist-tbl-wrap">
+          <table class="codinglist-tbl">
+            <colgroup>
+              <col style="width: 18%" />
+              <col style="width: 16%" />
+              <col />
+              <col style="width: 5%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="ta-c">1DEpth</th>
+                <th class="ta-c">2DEpth</th>
+                <th class="ta-c">url</th>
+                <th class="ta-c">date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ta-c" rowspan="6">메인</td>
+                <td class="ta-c">종합</td>
+                <td class="link-url">
+                  <a href="./html/signage_main.html" target="_blank">./html/signage_main.html</a>
+                </td>
+                <td class="ta-c" rowspan="6">03-05</td>
+              </tr>
+              <tr>
+                <td class="ta-c">미세먼지 <strong>좋음</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_good.html" target="_blank">./html/signage_good.html</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c">미세먼지 <strong>보통</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_normal.html" target="_blank"
+                    >./html/signage_normal.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c">미세먼지 <strong>나쁨</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_bad.html" target="_blank">./html/signage_bad.html</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c">미세먼지 <strong>매우 나쁨</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_verybad.html" target="_blank"
+                    >./html/signage_verybad.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c"><strong>점검중</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_check.html" target="_blank">./html/signage_check.html</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c" rowspan="4">서브01</td>
+                <td class="ta-c"><strong>좋음</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub.html" target="_blank">./html/signage_sub.html</a>
+                </td>
+                <td class="ta-c" rowspan="4">03-08</td>
+              </tr>
+              <tr>
+                <td class="ta-c"><strong>보통</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub_normal.html" target="_blank"
+                    >./html/signage_sub_normal.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c"><strong>나쁨</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub_bad.html" target="_blank"
+                    >./html/signage_sub_bad.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c"><strong>매우 나쁨</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub_verybad.html" target="_blank"
+                    >./html/signage_sub_verybad.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c" rowspan="4">서브02</td>
+                <td class="ta-c">지도 <strong>좋음</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub02.html" target="_blank">./html/signage_sub02.html</a>
+                </td>
+                <td rowspan="4"></td>
+              </tr>
+              <tr>
+                <td class="ta-c">지도 <strong>보통</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub02_normal.html" target="_blank"
+                    >./html/signage_sub02_normal.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c">지도 <strong>나쁨</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub02_bad.html" target="_blank"
+                    >./html/signage_sub02_bad.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c">지도 <strong>매우 나쁨</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub02_verybad.html" target="_blank"
+                    >./html/signage_sub02_verybad.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c" rowspan="2">서브03</td>
+                <td class="ta-c">미세먼지 측정원리</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub03_1.html" target="_blank"
+                    >./html/signage_sub03_1.html</a
+                  >
+                </td>
+                <td class="ta-c" rowspan="2">03-09</td>
+              </tr>
+              <tr>
+                <td class="ta-c">특화단지 8개소 미세먼지 현황</td>
+                <td class="link-url">
+                  <a href="./html/signage_sub03_2.html" target="_blank"
+                    >./html/signage_sub03_2.html</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="list_w">
+        <p class="tit">사이니지 가로형 (지하철 역사) 화면</p>
+        <div class="codinglist-tbl-wrap">
+          <table class="codinglist-tbl">
+            <colgroup>
+              <col style="width: 18%" />
+              <col style="width: 16%" />
+              <col />
+              <col style="width: 5%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="ta-c">1DEpth</th>
+                <th class="ta-c">2DEpth</th>
+                <th class="ta-c">url</th>
+                <th class="ta-c">date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ta-c">메인</td>
+                <td class="ta-c">시스템 <strong>작동 중 </strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_subway_main.html" target="_blank"
+                    >./html/signage_subway_main.html</a
+                  >
+                </td>
+                <td rowspan="3" class="ta-c">03-10</td>
+              </tr>
+              <tr>
+                <td class="ta-c">메인</td>
+                <td class="ta-c"><strong>미세먼지</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_subway_main02.html" target="_blank"
+                    >./html/signage_subway_main02.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="ta-c">메인</td>
+                <td class="ta-c"><strong>점검중</strong> 일 때 화면</td>
+                <td class="link-url">
+                  <a href="./html/signage_subway_main03.html" target="_blank"
+                    >./html/signage_subway_main03.html</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-
-    <div class="list_w">
-      <p class="tit">사이니지 가로형 (지하철 역사) 화면</p>
-      <table class="codinglist">
-        <colgroup>
-          <col style="width: 18%" />
-          <col style="width: 16%" />
-          <col />
-          <col style="width: 24%" />
-          <col style="width: 5%" />
-        </colgroup>
-        <thead>
-          <tr>
-            <th class="ta-c">1DEpth</th>
-            <th class="ta-c">2DEpth</th>
-            <th class="ta-c">url</th>
-            <th class="ta-c">비고</th>
-            <th class="ta-c">date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="ta-c">메인</td>
-            <td class="ta-c">시스템 <strong>작동 중 </strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_subway_main.html" target="_blank"
-                >./html/signage_subway_main.html</a
-              >
-            </td>
-            <td class="ta-c"></td>
-            <td rowspan="3" class="ta-c">03-10</td>
-          </tr>
-          <tr>
-            <td class="ta-c">메인</td>
-            <td class="ta-c"><strong>미세먼지</strong> 일 때 화면</td>
-
-            <td class="link-url">
-              <a href="./html/signage_subway_main02.html" target="_blank"
-                >./html/signage_subway_main02.html</a
-              >
-            </td>
-            <td class="ta-c"></td>
-          </tr>
-          <tr>
-            <td class="ta-c">메인</td>
-            <td class="ta-c"><strong>점검중</strong> 일 때 화면</td>
-            <td class="link-url">
-              <a href="./html/signage_subway_main03.html" target="_blank"
-                >./html/signage_subway_main03.html</a
-              >
-            </td>
-            <td class="ta-c"></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <script></script>
   </body>
 </html>
