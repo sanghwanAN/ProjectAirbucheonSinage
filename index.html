@@ -68,10 +68,7 @@
       .codinglist td:last-child {
         text-align: left;
       }
-      .codinglist tr:hover,
-      .codinglist tr.bg {
-        background: #efefef;
-      }
+
       .border-topline td {
         border-top: 3px solid #333;
       }
@@ -344,18 +341,6 @@
       </table>
     </div>
 
-    <script>
-      $(function () {
-        $(".codinglist tr").each(function () {
-          var index = $(".codinglist tbody tr").index(this) + 1
-          $(this).children("td:first-child").text(index)
-          $(this).children("td").find("a").attr("target", "_blank")
-        })
-        $(".codinglist tr").on("click", function () {
-          $(".codinglist tr").removeClass("bg")
-          $(this).addClass("bg")
-        })
-      })
-    </script>
+    <script></script>
   </body>
 </html>
