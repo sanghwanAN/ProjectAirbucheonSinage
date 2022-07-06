@@ -1,0 +1,410 @@
+/* pc메인 */
+
+#mainCon{width:100%; position:relative}
+
+.mVisArea{height:0; overflow:hidden;display:none;}/* (A)2/4 수정 */
+.mainVisArea{position:relative; width:100%; height:598px; overflow:visible;}
+.mainVisArea .wrapper .visual{display:block; position:absolute; top:0; left:100%; width:100%; height:100%;}
+.mainVisArea .wrapper .visual:first-child{left:0;}
+.mainVisArea .wrapper .visual .inner{width:980px; height:598px; margin:auto; position:relative;}
+.mainVisArea .inner .txtDiv .txt1{font-size:50px; color:#000; font-family:"NotoSans-Light"; letter-spacing:-1px; line-height:64px; position:absolute; top:208px; left:0; opacity:0;}
+.mainVisArea .inner .txtDiv .txt2{font-size:50px; color:#000; font-family:"NotoSans-Light"; letter-spacing:-1px; line-height:64px; position:absolute; top:270px; left:0; opacity:0;}
+.mainVisArea .inner .txtDiv .txt3{font-size:16px; color:#333; line-height:25px; font-family:"NotoSans-Light"; letter-spacing:-1px; position:absolute; top:355px; left:0; opacity:0;}
+.mainVisArea .inner .txtDiv .moreBt{width:135px; height:50px; padding:17px 0 0; font-size:15px; color:#000; display:block; position:absolute; top:450px; left:0; opacity:0; text-align:center; margin:0; border:1px solid #666; border-radius:25px}
+.mainVisArea .inner .txtDiv .moreBt span{display:inline-block; background:url("/common/web/img/main_morebt_icon.png") no-repeat right 2px; padding-right:22px;}
+.mainVisArea .inner .imgDiv p{position:absolute;}
+.mainVisArea .inner .imgDiv .seed1{right:0; bottom:0; z-index:1; opacity:0;}
+.mainVisArea .inner .imgDiv .seed2{right:0; bottom:0; z-index:1; opacity:0;}
+.mainVisArea .inner .imgDiv .seed3{right:0; bottom:0; z-index:1; opacity:0;}
+.mainVisArea .inner .imgDiv .seed4{right:0; bottom:0; z-index:1; opacity:0;}
+.mainVisArea .inner .imgDiv .water{left:220px; top:294px; opacity:0;}
+.mainVisArea .inner .imgDiv .stem1{left:454px; bottom:180px; opacity:0;}
+.mainVisArea .inner .imgDiv .stem2{right:260px; bottom:164px; opacity:0;}
+.mainVisArea .inner .imgDiv .tree{right:-73px; bottom:0; opacity:0;}
+.mainVisArea .rollBtDiv{width:980px; height:10px; position:absolute; left:0; right:0; margin:auto; bottom:123px; overflow:hidden; text-align:left; z-index:1;}
+.mainVisArea .rollBtDiv a{vertical-align:top; width:10px; height:10px; margin:0 0 0 3px; border:2px solid #453d34; border-radius:5px; display:inline-block;}
+.mainVisArea .rollBtDiv a:first-child{margin:0;}
+.mainVisArea .rollBtDiv a.on{background:#3d362e;}
+
+.myNhDiv{width:750px; height:151px; margin:-69px auto 0; position:relative; overflow:hidden; background:url("/common/web/img/main_myNh_bg.png") no-repeat 0 0; z-index:2}
+.myNhDiv .pointList{overflow:hidden; padding:42px 0 0 34px}
+.myNhDiv .pointList li{float:left; text-align:center; height:53px; border-right:1px solid #e8e8e8}
+.myNhDiv .pointList li:nth-child(1){width:227px;}
+.myNhDiv .pointList li:nth-child(2){width:144px;}
+.myNhDiv .pointList li:nth-child(3){width:156px; border-right:0px solid #e8e8e8}
+.myNhDiv .pointList li .tit{font-size:15px; color:#000}
+.myNhDiv .pointList li .num{font-family:"Montserrat-Light"; font-size:18px; color:#169296; margin-top:12px}
+.myNhDiv .pointList li .num strong{font-family:"Montserrat-Bold"; font-size:26px;}
+.myNhDiv .goInfo{display:block; width:100px; height:40px; padding:9px 0 0; border-radius:20px; background:#005bac; text-align:center; position:absolute; top:46px; right:74px; box-sizing:border-box;}
+.myNhDiv .goInfo span{display:inline-block; font-family:"NotoSans-Bold"; font-size:13px; color:#fff; padding-right:11px; background:url("/common/web/img/main_mynh_arrow.png") no-repeat right center;}
+.loginBt{width:980px; height:86px; margin:-43px auto 0; z-index:2; position:relative}
+.loginBt a{display:block; width:86px; height:86px; border-radius:43px; position:absolute; top:0; right:0;}
+.loginBt a img{display:block; width:86px; height:86px; border-radius:43px; box-shadow:0 15px 10px rgba(0, 0, 0, 0.1);  z-index:2; overflow:hidden}
+
+.mLogin{display:none;}
+.mainLoginCon1{width:860px; margin:62px auto 0; overflow:hidden}
+.mainLoginCon1 .loginCon1{position:relative; width:410px; height:320px; float:left; overflow:hidden}
+.mainLoginCon1 .loginCon2{position:relative; width:410px; height:320px; float:right; overflow:hidden}
+.mainLoginCon1 .tit{font-size:24px; color:#000; letter-spacing:-1px}
+.mainLoginCon1 .tit strong{font-family:"NotoSans-Bold";}
+.mainLoginCon1 .tit br{display:none;}
+.mainLoginCon1 .conMoreBt{font-size:14px; color:#888; display:block; position:absolute; top:4px; right:0; background:url("/common/web/img/LoginCon_arrow.png") no-repeat right center; padding-right:13px;}
+.mainLoginCon1 .listDiv{margin-top:27px; position:relative; height:230px;}
+.mainLoginCon1 .bts{position:absolute; width:100px; right:0; bottom:0; left:0; margin:auto; height:20px;}
+.mainLoginCon1 .next{width:20px; height:20px; position:absolute; top:0; right:0; background:url("/common/web/img/mainlogin_con_rollbt2.png") no-repeat 0 0; background-size:20px;}
+.mainLoginCon1 .prev{width:20px; height:20px; position:absolute; top:0; left:0; background:url("/common/web/img/mainlogin_con_rollbt1.png") no-repeat 0 0; background-size:20px;}
+.mainLoginCon1 .pagingDiv{position:absolute; right:0; bottom:4px; left:0; margin:auto; text-align:center; font-size:14px; color:#888; font-family:"Montserrat-Regular";}
+.mainLoginCon1 .pagingDiv .showNum{color:#000; font-family:"Montserrat-Medium";}
+/*.mainLoginCon1 .loginCon1 .list{width:410px; height:230px; box-sizing:border-box; padding:45px 40px; border-radius:10px; overflow:hidden; color:#3f0808; display:block; position:absolute; top:0; left:100%;}*/
+.mainLoginCon1 .loginCon1 .list{width:410px; height:230px; box-sizing:border-box; border-radius:10px; overflow:hidden; color:#3f0808; display:block; position:absolute; top:0; left:100%;}/* 2022-03-10 웹접근성 이벤트 없습니다 멘트 추가 후 padding값 없앰 */
+.mainLoginCon1 .loginCon1 .list:first-child{left:0;}
+.mainLoginCon1 .loginCon1 .list .txt1{display:block; font-size:16px; color:#000; font-family:"NotoSans-Bold";}
+.mainLoginCon1 .loginCon1 .list .txt2{font-size:20px; line-height:28px; margin-top:11px;}
+.mainLoginCon1 .loginCon1 .list .txt3{font-family:"Montserrat-Regular"; font-size:16px; margin-top:14px; color:#3f0808;}
+.mainLoginCon1 .loginCon2 .list{width:410px; height:230px; box-sizing:border-box; background:url("/common/web/img/login_con2_bg.png") no-repeat 0 0; overflow:hidden; color:#3f0808; display:block;  position:absolute; top:0; left:100%;}
+.mainLoginCon1 .loginCon2 .list:first-child{left:0;}
+.mainLoginCon1 .loginCon2 .list .img{width:120px; height:120px; overflow:hidden; border-radius:60px; margin:54px 23px 54px 29px; float:left}
+.mainLoginCon1 .loginCon2 .list .img img{width:100%;}
+.mainLoginCon1 .loginCon2 .list .txt{width:234px; height:230px; overflow:hidden; box-sizing:border-box; padding:45px 30px 20px 22px; float:left}
+.mainLoginCon1 .loginCon2 .list .txt .txt1{display:block; font-size:16px; color:#23b8bc; font-family:"NotoSans-Bold";}
+.mainLoginCon1 .loginCon2 .list .txt .txt2{display:block; font-size:20px; line-height:28px; margin-top:11px; color:#000}
+.mainLoginCon1 .loginCon2 .list .txt .txt3{display:block; font-family:"Montserrat-Regular"; font-size:16px; margin-top:14px; color:#888}
+.mainLoginCon1 .loginCon2 .list .txt .nolist{display:block; font-size:20px; line-height:28px; margin-top:40px; color:#000}
+
+.maincon1{margin-top:132px}
+.maincon1 .tit{text-align:center; font-size:50px; color:#000}
+.maincon1 .tit strong{margin-left:20px; font-family:"NotoSans-Bold";}
+.maincon1 .conDiv{position:relative; width:980px; height:730px; margin:auto; background:url("/common/web/img/maincon1_bg.png") no-repeat center 0;}
+.maincon1 .conDiv p.op{position:absolute; display:table; opacity:0; font-size:18px; line-height:24px; color:#292929; font-family:"NotoSans-Light"; z-index:1;}
+.maincon1 .conDiv p.op > span{display:table-cell; width:20px; height:20px; vertical-align:middle; cursor:pointer; background:url("/common/web/img/maincon1_dot.png") no-repeat center center;}
+.maincon1 .conDiv p.op > span img{width:20px; height:20px; opacity:0;}
+.maincon1 .conDiv p.op strong{display:table-cell; vertical-align:middle; opacity:.8; padding:0 10px; font-family:"NotoSans-Light";}
+.maincon1 .conDiv p.op.one{top:135px; left:136px;  text-align:right;}
+.maincon1 .conDiv p.op.two{top:135px; left:665px;}
+.maincon1 .conDiv p.op.thr{top:325px; left:70px; text-align:right;}
+.maincon1 .conDiv p.op.fou{top:325px; left:743px;}
+.maincon1 .conDiv p.op.fiv{top:510px; left:153px; text-align:right;}
+.maincon1 .conDiv p.op.six{top:510px; left:665px;}
+.maincon1 .conDiv .card{position:absolute; top:173px; left:0; right:0; margin:auto; width:230px; height:362px; box-shadow:0px 1px 30px rgba(0, 0, 0, 0.2); border-radius:20px; overflow:hidden}
+.maincon1 .conDiv .cardBt{position:absolute; bottom:0; width:100%; text-align:center}
+.maincon1 .conDiv .cardBt a{display:inline-block; width:266px; height:70px; /*background:#25b7bc;*/ background:#098488; text-align:center; line-height:69px; border-radius:35px; font-family:"NotoSans-Bold"; font-size:16px; color:#fff}/*02-11 수정*/
+
+.maincon2.mCon2{height:0; overflow:hidden; margin-top:0;display:none;}/*2022-04-22 display:none 추기 */
+.maincon2{margin-top:178px; width:100%; height:670px; position:relative;}
+.maincon2 .container{z-index:10; position:relative; width:100%; height:100%;}
+.maincon2 .slide{position:absolute; top:0; left:100%; width:100%; overflow:hidden;}
+.maincon2 .slide:first-child{left:0;}
+.maincon2 .conDiv{position:relative; width:980px; height:670px; margin:auto}
+.maincon2 .conDiv .img{position:absolute; top:0; right:490px; height:670px;}
+.maincon2 .conDiv .txt{position:absolute; top:0; left:560px; height:620px; padding-top:50px}
+.maincon2 .conDiv .txt span{display:block;}
+.maincon2 .conDiv .txt span img{height:66px; width:auto; margin:0 10px 10px 0;}
+.maincon2 .conDiv .txt pre{font-family:"NotoSans-Light"; font-size:16px; line-height:25px; color:#555; margin-top:30px}
+/* .maincon2 .conDiv .txt .txt1{padding:10px; color:#333; font-size:16px; background:#fff; border:1px solid #000; display:inline-block;} */
+.maincon2 .conDiv .txt .txt2{width:420px; height:120px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; font-family:"NotoSans-Thin"; font-size:50px; line-height:60px; color:#000; letter-spacing:-3px; margin-top:15px}
+.maincon2 .conDiv .txt .txt2 strong{font-family:"NotoSans-Bold";}
+.maincon2 .conDiv .txt .txt3{font-family:"NotoSans-Light"; font-size:16px; line-height:25px; color:#555; margin-top:30px}
+.maincon2 .conDiv .txt a{display:inline-block; width:230px; height:70px; margin-top:50px; /*background:#25b7bc*/ background:#098488; text-align:center; line-height:69px; border-radius:35px; font-family:"NotoSans-Bold"; font-size:16px; color:#fff} /*2020-02-18 접근성 수정*/
+.maincon2 .rollBtDiv2{width:980px; height:10px; position:absolute; right:0; margin:auto; left:0; bottom:100px; overflow:hidden; text-align:left; padding-left:580px;}
+.maincon2 .rollBtDiv2 a{vertical-align:top; width:10px; height:10px; margin:0 0 0 3px; border:2px solid #453d34; border-radius:5px; display:inline-block;}
+.maincon2 .rollBtDiv2 a{margin:0;}
+.maincon2 .rollBtDiv2 a.on{background:#3d362e;}
+.maincon2 .conBg{width:100%; height:494px; background:#f6f8fb; position:absolute; bottom:0; left:144px; z-index:5; border-radius:100px 0 0 0;}
+
+/* 20190503 메인 이벤트 영역 중앙 정렬 수정 Start */
+.maincon2.n-center {height:900px;margin-top:100px;text-align:center}
+.maincon2.n-center .conDiv {height:860px;}
+.maincon2.n-center .conDiv .img {width:100%;height:580px;/*margin-bottom:50px;*/right:0;overflow: hidden;}
+.maincon2.n-center .conDiv .txt {width:100%;text-align:center;;clear:both;float:left;position:absolute; top:580px; left:0;  padding:0px;}
+.maincon2.n-center .rollBtDiv2 {text-align:center;padding-left:0; top:360px;}
+.maincon2.n-center .conDiv .txt pre {font-family:"NotoSans-Light"; font-size:16px; line-height:25px; color:#555; margin-top:20px}
+.maincon2.n-center .conDiv .txt .txt1 img {position:absolute;left:0;top:0px}
+.maincon2.wCon2 .conDiv .txt .txt1 {display:none} /* 2022-04-22 슬라이더 모바일에서 트러지는 현상 수정건 적용 */
+.maincon2.n-center .conDiv .txt .txt2{height:120px; width:100%;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; font-family:"NotoSans-Thin"; font-size:50px;; color:#000; letter-spacing:-3px}
+.maincon2.n-center .conDiv .txt a{display:inline-block; width:230px; height:70px; margin-top:20px; background:#098488; text-align:center; line-height:69px; border-radius:35px; font-family:"NotoSans-Bold"; font-size:16px; color:#fff}/*02-11 수정*/
+.maincon2.n-center .conBg{width:100%; height:494px; background-color:transparent; position:absolute; bottom:0; left:144px; z-index:5; border-radius:100px 0 0 0;margin-top:-100px}
+.maincon2.n-center ~ .maincon3 .conBg {background-color:transparent;}
+.maincon2.n-center ~ .maincon4 .conDiv {top:147px}
+/* 20190503 메인 이벤트 영역 중앙 정렬 수정 End */
+
+.maincon3{width:100%; height:440px; position:relative;}
+.maincon3 a{display:block; position:absolute; top:200px; left:0; opacity:0; width:230px; height:365px; padding:73px 0 0; background:#fff; z-index:10; text-align:center; border-radius:10px; box-shadow:0px 1px 30px rgba(0, 0, 0, 0.1);}
+.maincon3 a:nth-child(2){left:250px;}
+.maincon3 a:nth-child(3){left:500px;}
+.maincon3 a:nth-child(4){left:750px;}
+.maincon3 a .txt1{font-family:"NotoSans-Bold"; font-size:20px; color:#000; padding:98px 0 0}
+.maincon3 a:nth-child(1) .txt1{background:url("/common/web/img/maincon3_icon1.png") no-repeat center 0;}
+.maincon3 a:nth-child(2) .txt1{background:url("/common/web/img/maincon3_icon2.png") no-repeat center 0;}
+.maincon3 a:nth-child(3) .txt1{background:url("/common/web/img/maincon3_icon3.png") no-repeat center 0;}
+.maincon3 a:nth-child(4) .txt1{background:url("/common/web/img/maincon3_icon4.png") no-repeat center 0;}
+.maincon3 a .txt2{font-size:16px; color:#888; line-height:24px; margin-top:14px}
+.maincon3 a .icon{margin-top:26px}
+.maincon3 .conBg{width:100%; height:210px; background:#f6f8fb; position:absolute; top:0; left:144px; z-index:5; border-radius:0 0 0 100px;}
+
+.maincon4{position:relative; width:100%; height:910px; overflow:hidden;}
+.maincon4 .conDiv{position:absolute; top:197px; left:320px; width:100%; height:713px; background:url("/common/web/img/maincon4_bg.png") no-repeat 0 bottom;}
+.maincon4 .conDiv .phone{position:absolute; top:-91px; left:115px; overflow:hidden; width:679px; height:685px;}
+.maincon4 .conDiv .phone .wImg{position:absolute; top:300px; left:0; opacity:0}
+.maincon4 .conDiv .phone .mImg{display:none;}
+.maincon4 .conDiv .txt{position:absolute; top:145px; left:797px;}
+.maincon4 .conDiv .txt .txt1{font-family:"Montserrat-Light"; font-size:48px; line-height:62px; color:#000}
+.maincon4 .conDiv .txt .txt1 span{font-size:54px; font-family:"Montserrat-Bold";}
+.maincon4 .conDiv .txt .txt2{margin-top:19px; font-size:16px; line-height:26px; color:#000}
+.maincon4 .conDiv .txt .bts{margin-top:45px}
+
+@media all and (max-width:1600px){
+
+	.maincon4 .conDiv{left:10px;}
+	.maincon4 .conDiv .phone{left:70px}
+	.maincon4 .conDiv .txt{left:697px;}
+}
+
+@media all and (max-width:1200px){
+
+	.mainVisArea .swiper-wrapper .swiper-slide .inner{width:950px;}
+	.mainVisArea .swiper-pagination{width:950px}
+	.mainVisArea .loginBt{width:950px}
+	.maincon3 a:nth-child(2){left:240px;}
+	.maincon3 a:nth-child(3){left:480px;}
+	.maincon3 a:nth-child(4){left:720px;}
+	.maincon4 .conDiv .phone{left:35px; width:615px;}
+	.maincon4 .conDiv .phone img{width:100%; height:100%}
+	.maincon4 .conDiv .txt{left:580px;}
+	.maincon4 .conDiv .txt .txt1{font-size:35px;}
+	.maincon4 .conDiv .txt .txt1 span{font-size:40px}
+	.maincon4 .conDiv .txt .txt2{font-size:15px;}
+	.maincon4 .conDiv .txt .bts a{width:185px; display:inline-block;}
+	.maincon4 .conDiv .txt .bts a img{width:100%;}
+}
+
+@media all and (max-width:1000px){
+	
+	.mainVisArea{display:none;}
+	.mVisArea{height:100%; overflow:visible;display:block;}/* (A)2/4 수정 */
+	.mVisArea .swiper-slide{display:block; width:100%; height:100%;}
+	.mVisArea .swiper-slide img{width:100%;}
+	.mVisArea .swiper-slide .txtDiv{position:absolute; top:150px; left:5%;}
+	.mVisArea .swiper-slide .txtDiv .txt1{font-size:50px; color:#000; font-family:"NotoSans-Light"; line-height:64px; letter-spacing:-1px;}
+	.mVisArea .swiper-slide .txtDiv .txt2{font-size:16px; color:#333; line-height:25px; font-family:"NotoSans-Light"; margin-top:40px;}
+	.mVisArea .swiper-slide .txtDiv .moreBt{width:135px; height:50px; padding:17px 0 0; font-size:15px; color:#000; display:none;/*display:block; 자세히보기버튼 주석 송준희 20191118*/text-align:center; margin:60px 0 0; border:1px solid #666; border-radius:25px}
+	.mVisArea .swiper-pagination{width:90%; height:10px; left:0; right:0; margin:auto; bottom:auto; top:650px; overflow:hidden; text-align:left}
+	.mVisArea .swiper-pagination .swiper-pagination-bullet{vertical-align:top; width:10px; height:10px; margin:0 0 0 6px; border:2px solid #453d34; opacity:1; background:none;}
+	.mVisArea .swiper-pagination .swiper-pagination-bullet:first-child{margin:0;}
+	.mVisArea .swiper-pagination .swiper-pagination-bullet-active{background:#3d362e;}
+	.myNhDiv{width:740px; height:150px; background-size:100%}
+	.myNhDiv .pointList{padding:35px 0 0 34px}
+	.myNhDiv .goInfo{top:40px; right:30px;}
+	.loginBt{width:90%;}
+	.wLogin{display:none;}
+	.mLogin{display:block;}
+	.mainLoginCon1{width:90%;}
+	.mainLoginCon1 .loginCon1{width:410px; float:none; margin:auto;}
+	.mainLoginCon1 .loginCon2{width:410px; float:none; margin:50px auto 0;}
+	.mainLoginCon1 .swiper-container{overflow:visible}
+	.mainLoginCon1 .swiper-wrapper{margin-top:27px}
+	.mainLoginCon1 .swiper-pagination{width:auto; right:0; bottom:-38px; left:0; margin:auto; font-size:14px; color:#888; font-family:"Montserrat-Light";}
+	.mainLoginCon1 .swiper-pagination .swiper-pagination-current{color:#000}
+	.mainLoginCon1 .bts{position:absolute; width:100px; right:0; bottom:-42px; left:0; margin:auto; height:23px;}
+	.mainLoginCon1 .loginCon1 .list{position:static;}
+	.mainLoginCon1 .loginCon2 .list{position:static;}
+	.mainLoginCon1 .swiper-button-next, .swiper-button-prev{top:0; margin-top:0;}
+	.mainLoginCon1 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{width:20px; height:20px; right:0; background:url("/common/web/img/mainlogin_con_rollbt2.png") no-repeat 0 0; background-size:20px;}
+	.mainLoginCon1 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{width:20px; height:20px; left:0; background:url("/common/web/img/mainlogin_con_rollbt1.png") no-repeat 0 0; background-size:20px;}
+
+	.maincon1{margin-top:132px}
+	.maincon1 .conDiv{width:380px; height:auto; background:none; text-align:center;}
+	.maincon1 .conDiv p.op{position:static; opacity:1; display:block; background:url("/common/web/img/maincon1_dot.png") no-repeat 0 center; min-height:20px; margin-bottom:25px;}
+	.maincon1 .conDiv p.op > span{display:none; text-indent:-9999px;}
+	.maincon1 .conDiv p.op > span img{text-indent:-99999px; display:none;}
+	.maincon1 .conDiv p.op br{display:none;}
+	.maincon1 .conDiv p.op strong{opacity:1; padding:0 0 0 35px; color:#666; font-family:"NotoSans-Medium";}
+	.maincon1 .conDiv p.op strong > span{color:#005bab;}
+	.maincon1 .conDiv p.op.one{top:0; left:0;}
+	.maincon1 .conDiv p.op.two{top:0; left:0;}
+	.maincon1 .conDiv p.op.thr{top:0; left:0;}
+	.maincon1 .conDiv p.op.fou{top:0; left:0;}
+	.maincon1 .conDiv p.op.fiv{top:0; left:0;}
+	.maincon1 .conDiv p.op.six{top:0; left:0; margin-bottom:80px;}
+	.maincon1 .conDiv p.op:hover span img{text-indent:-99999px; display:none; opacity:0;}
+	.maincon1 .conDiv p.op:hover strong{font-family:"NotoSans-Medium";}
+	.maincon1 .conDiv p.op.one:hover{top:0; left:0;}
+	.maincon1 .conDiv p.op.two:hover{top:0; left:0;}
+	.maincon1 .conDiv p.op.thr:hover{top:0; left:0;}
+	.maincon1 .conDiv p.op.fou:hover{top:0; left:0;}
+	.maincon1 .conDiv p.op.fiv:hover{top:0; left:0;}
+	.maincon1 .conDiv p.op.six:hover{top:0; left:0;}
+	.maincon1 .conDiv .card{position:static; margin:45px auto 50px;}
+	.maincon1 .conDiv .cardBt{position:static;}
+	.maincon1 .conDiv .cardBt a{display:inline-block; width:266px; height:70px; background:#098488; text-align:center; line-height:69px; border-radius:35px; font-family:"NotoSans-Bold"; font-size:16px; color:#fff} /*2020-02-18 접근성 수정*/
+	.maincon2{width:100%; height:100%; position:relative;}
+	.maincon2 .swiper-container{overflow:visible; z-index:10;}
+	.maincon2 .swiper-slide{overflow:hidden}
+	.maincon2 .conDiv{position:relative; width:100%; height:100%; margin:auto}
+	.maincon2 .conDiv .img{position:static; height:100%; width:90%}
+	.maincon2 .conDiv .img img{width:100%;}
+	.maincon2 .conDiv .txt{position:static; height:100%; padding:50px 5% 0; text-align:left;}
+	.maincon2 .conDiv .txt span{text-align:left;}
+	.maincon2 .swiper-pagination{width:90%; height:10px; right:0; margin:auto; left:0; bottom:-60px; overflow:hidden; text-align:center;}
+	.maincon2 .swiper-pagination .swiper-pagination-bullet{vertical-align:top; width:10px; height:10px; margin:0 0 0 6px; border:2px solid #453d34; opacity:1; background:none;}
+	.maincon2 .swiper-pagination .swiper-pagination-bullet:first-child{margin:0;}
+	.maincon2 .swiper-pagination .swiper-pagination-bullet-active{background:#3d362e;}
+	.maincon2 .conBg{height:100%; bottom:auto; top:100px; left:0; border-radius:0}
+
+	.maincon3{width:100%; height:100%; position:relative;}
+	.maincon3 .inner{padding:105px 5% 0; position:relative; z-index:10;}/* 2022-04-22 패딩수정 */
+	.maincon3 a{display:block; position:static; opacity:1; width:49%; float:left; margin-bottom:2%;}
+	.maincon3 a:nth-child(2n){float:right;}
+	.maincon3 a:nth-child(3){margin-bottom:0;}
+	.maincon3 a:nth-child(4){margin-bottom:0;}
+	.maincon3 .conBg{width:100%; height:325px; left:0; border-radius:0}
+
+	.maincon4{height:100%; margin-top:190px;}
+	.maincon4 .conDiv{position:static; height:100%; background:none;}
+	.maincon4 .conDiv .phone{position:static; width:100%; height:100%;}
+	.maincon4 .conDiv .phone .wImg{display:none;}
+	.maincon4 .conDiv .phone .mImg{display:block; width:100%;}
+	.maincon4 .conDiv .txt{position:static; padding:60px 8% 0;}
+	/* 2022-04-22 슬라이더 모바일에서 트러지는 현상 수정건 적용 시작 */
+	/* .maincon2.wCon2{display:none;} */
+	/* .maincon2.mCon2{height:100%; overflow:visible; margin-top:178px;display:block;} */
+	.maincon2.wCon2{height:auto;margin-top: 10px;}
+	.maincon2.wCon2.n-center .conDiv{height:100%;}
+	.maincon2.wCon2 .container>.wrapper{height:100vh;position:relative;}
+	.maincon2.wCon2 .conDiv{display: flex;flex-direction: column;flex-wrap: wrap; align-items: center;justify-content: center;} 
+	.maincon2.wCon2 .conDiv .txt{position:static;height:auto;float:none;}
+	.maincon2.wCon2 .conDiv .txt>.txt1{display:none}
+	.maincon2.wCon2 .conDiv .txt span.txt2{margin-top:30px;text-align:center;line-height:normal;height:auto; font-size: calc( 18px + (44 - 18) * ((100vw - 280px) / (999 - 280))); }
+	.maincon2.wCon2 .slide {height:100%;}
+	.maincon2.wCon2 .slide .conDiv>.img {position:relative;height:0;padding-top:40%;}
+	.maincon2.wCon2 .slide .conDiv>.img>img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;}
+	.maincon2.wCon2 .rollBtDiv2 {width:100%;top:auto;bottom:0;height:auto;margin:0;}
+	.maincon2.wCon2 .rollBtDiv2 a {width:12px;height:12px;border-radius:50%;}
+	/* 2022-04-22 슬라이더 모바일에서 트러지는 현상 수정건 적용 끝 */
+}
+
+@media all and (max-width:758px){
+
+	.mVisArea{padding-top:45px;}
+	.mVisArea .swiper-slide .txtDiv{top:50px; left:5%;}
+	.mVisArea .swiper-slide .txtDiv .txt1{font-size:24px; line-height:32px; letter-spacing:-0.4px;}
+	.mVisArea .swiper-slide .txtDiv .txt2{font-size:12px; line-height:18px; margin-top:8px;}
+	.mVisArea .swiper-slide .txtDiv .moreBt{width:80px; height:30px; padding:9px 0 0; font-size:11px; margin:27px 0 0; border:1px solid #222; border-radius:15px}
+	.mVisArea .swiper-pagination{width:94%; height:7px; left:0; right:0; margin:auto; top:295px; overflow:hidden; text-align:left}
+	.mVisArea .swiper-pagination .swiper-pagination-bullet{width:7px; height:7px; margin:0 0 0 3px; border:1px solid #453d34;}
+	.myNhDiv{width:320px; height:161px; margin:-80px auto 0; background:url("/common/web/img/m_main_myNh_bg.png") no-repeat 0 0; background-size:100%;}
+	.myNhDiv .pointList{padding:30px 27px 0}
+	.myNhDiv .pointList li{height:36px;}
+	.myNhDiv .pointList li:nth-child(1){width:127px;}
+	.myNhDiv .pointList li:nth-child(2){width:62px;}
+	.myNhDiv .pointList li:nth-child(3){width:75px;}
+	.myNhDiv .pointList li .tit{font-size:12px;}
+	.myNhDiv .pointList li .tit > span{display:none}
+	.myNhDiv .pointList li .num{margin-top:6px}
+	.myNhDiv .pointList li .num strong{font-size:18px;}
+	.myNhDiv .goInfo{width:240px; height:40px; padding:9px 0 0; border-radius:5px; position:absolute; top:auto; bottom:37px; right:40px;}
+	.myNhDiv .goInfo span{padding-right:16px; background-size:5px 8px;}
+	.loginBt{width:94%; height:65px; margin:-33px auto 0;}
+	.loginBt a{width:65px; height:65px; border-radius:33px;}
+	.loginBt a img{width:65px; height:65px; border-radius:33px;}
+
+	.mainLoginCon1{width:100%; margin:55px auto 0;}
+	.mainLoginCon1 .loginCon1{width:290px; height:250px;}
+	.mainLoginCon1 .loginCon2{width:290px; height:250px;}
+	.mainLoginCon1 .tit{font-size:20px; line-height:24px; font-family:"NotoSans-Light";}
+	.mainLoginCon1 .tit br{display:block;}
+	.mainLoginCon1 .conMoreBt{font-size:12px; bottom:0; background-size:4px 7px; padding-right:10px;}
+	.mainLoginCon1 .swiper-container{width:290px;}
+	.mainLoginCon1 .swiper-wrapper{margin-top:13px; width:290px;}
+	.mainLoginCon1 .swiper-pagination{bottom:-23px; font-size:12px;}
+	.mainLoginCon1 .bts{width:73px; bottom:-24px; height:14px;}
+	.mainLoginCon1 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{width:14px; height:14px; right:0; background:url("/common/web/img/m_mainlogin_con_rollbt2.png") no-repeat 0 0; background-size:14px}
+	.mainLoginCon1 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{width:14px; height:14px; left:0; background:url("/common/web/img/m_mainlogin_con_rollbt1.png") no-repeat 0 0; background-size:14px}
+	.mainLoginCon1 .loginCon1 .list{width:290px; height:163px; padding:25px 20px; background-size:cover !important;}
+	.mainLoginCon1 .loginCon1 .list .txt1{font-size:12px;}
+	.mainLoginCon1 .loginCon1 .list .txt2{font-size:15px; line-height:19px; margin-top:18px; color:#320600;}
+	.mainLoginCon1 .loginCon1 .list .txt3{font-family:"Montserrat-Light"; font-size:11px; margin-top:8px;}
+	.mainLoginCon1 .loginCon2 .list{width:290px; height:163px; background:url("/common/web/img/m_login_con2_bg.png") no-repeat 0 0; background-size:100%}
+	.mainLoginCon1 .loginCon2 .list .img{width:80px; height:80px; border-radius:40px; margin:42px 13px 0 13px}
+	.mainLoginCon1 .loginCon2 .list .img img{width:100%;}
+	.mainLoginCon1 .loginCon2 .list .txt{width:calc(290px - 106px); height:163px; padding:23px 18px;}
+	.mainLoginCon1 .loginCon2 .list .txt .txt1{font-size:12px;}
+	.mainLoginCon1 .loginCon2 .list .txt .txt2{font-size:15px; line-height:19px; margin-top:15px;}
+	.mainLoginCon1 .loginCon2 .list .txt .txt3{font-family:"Montserrat-Light"; font-size:11px; margin-top:12px;}
+	.mainLoginCon1 .loginCon2 .list .txt .nolist{font-size:15px; line-height:19px; margin-top:35px;}
+
+	.maincon1{margin-top:90px}
+	.maincon1 .tit{font-size:25px; letter-spacing:-0.4px;}
+	.maincon1 .tit span{width:112px; display:inline-block;}
+	.maincon1 .tit span img{width:100%;}
+	.maincon1 .tit strong{margin-left:10px;}
+	.maincon1 .conDiv{width:280px;}
+	.maincon1 .conDiv p.op{background-size:10px; min-height:10px; margin-bottom:11px; letter-spacing:-0.5px;}
+	.maincon1 .conDiv p.op strong{padding:0 0 0 12px; font-size:14px;}
+	.maincon1 .conDiv p.op.six{margin-bottom:40px;}
+	.maincon1 .conDiv .card{margin:22px auto 25px; width:145px; height:225px; border-radius:5px;}
+	.maincon1 .conDiv .card img{width:100%;}
+	.maincon1 .conDiv .cardBt a{width:190px; height:40px; /*background:#25b7bc;*/ background:#098488; line-height:39px; border-radius:20px; font-size:12px;} /*2020-02-18 접근성 수정*/
+
+	.maincon2.mCon2{margin-top:100px;}
+	.maincon2 .conDiv .img{height:100%; width:94%}
+	.maincon2 .conDiv .txt{padding:25px 5% 0; text-align:left;}
+	.maincon2 .conDiv .txt .txt1{padding:0;}
+	.maincon2 .conDiv .txt .txt1 img{height:50px; width:auto;}
+	.maincon2 .conDiv .txt .txt2{width:auto; height:auto; font-size:25px; line-height:30px; letter-spacing:-0.4px; margin-top:9px;}
+	.maincon2 .conDiv .txt .txt3{font-size:12px; line-height:17px; margin-top:8px}
+	.maincon2 .conDiv .txt a{width:190px; height:40px; margin-top:17px; line-height:39px; border-radius:20px; font-size:12px;}
+	.maincon2 .swiper-pagination{width:94%; bottom:-33px;}
+	.maincon2 .swiper-pagination .swiper-pagination-bullet{width:7px; height:7px; margin:0 0 0 3px; border:1px solid #4d4f51;}
+	.maincon2 .swiper-pagination .swiper-pagination-bullet-active{background:#484a4c;}
+	.maincon2 .conBg{top:50px;}
+	/* 2022-04-22 슬라이더 모바일에서 트러지는 현상 수정건 적용 시작 */
+	.maincon2.wCon2 .conBg {display: none;}
+	.maincon2.wCon2 .rollBtDiv2{bottom: 6%;}
+	/* .maincon3 .inner{padding:83px 3% 0;} 2022-04-22 삭제 */
+	.maincon3 .inner{padding:43px 3% 0;} /* 2022-04-22 수정 */
+	.maincon3 a{height:100%; padding:25px 0;}
+	/* .maincon3 a .txt1{font-size:15px; padding:60px 0 0;} 2022-04-22 삭제 */
+	.maincon3 a .txt1{font-size:15px; padding:80px 0 0;} /* 2022-04-22 수정 */
+	.maincon3 a:nth-child(1) .txt1{background:url("/common/web/img/m_maincon3_icon1.png") no-repeat center 3px; background-size:32px;}
+	.maincon3 a:nth-child(2) .txt1{background:url("/common/web/img/m_maincon3_icon2.png") no-repeat center 0; background-size:36px;}
+	.maincon3 a:nth-child(3) .txt1{background:url("/common/web/img/m_maincon3_icon3.png") no-repeat center 13px; background-size:40px;}
+	.maincon3 a:nth-child(4) .txt1{background:url("/common/web/img/m_maincon3_icon4.png") no-repeat center 10px; background-size:35px;}
+	.maincon3 a .txt2{font-size:11px; line-height:15px; margin-top:7px; font-family:"NotoSans-Light"}
+	.maincon3 a .icon{margin:20px auto 0; width:20px; height:20px;}
+	.maincon3 a .icon img{width:100%;}
+	.maincon3 .conBg{height:195px;}
+
+	.maincon4{margin-top:95px;}
+	.maincon4 .conDiv .txt{position:static;padding:24px 8% 0;}
+	.maincon4 .conDiv .txt .txt1{font-size:25px;line-height:31px;}
+	.maincon4 .conDiv .txt .txt1 span{font-size:27px;}
+	.maincon4 .conDiv .txt .txt2{margin-top:5px;font-size:12px;line-height:17px;color:#777;word-break:keep-all;}
+	.maincon4 .conDiv .txt .txt2 br{display:none;}
+	.maincon4 .conDiv .txt .bts{margin-top:37px;text-align:center;}
+	.maincon4 .conDiv .txt .bts a{width:132px;height:40px;}
+	.maincon4 .conDiv .txt .bts a img{width:100%;height:100%;}
+
+}
+
+/* new_2019 renew*/
+.maincon2.n-center .conDiv{height:875px;}
+.maincon2.mCon2{margin-top: 30px;}
+.maincon3 a:nth-child(1) .txt1{background: url(/common/web/img/new2019/maincon3_icon1.png) no-repeat center 0; background-size:72px auto}
+.maincon3 a:nth-child(2) .txt1{background: url(/common/web/img/new2019/maincon3_icon2.png) no-repeat center 0; background-size:76px auto}
+.maincon3 a:nth-child(3) .txt1{background: url(/common/web/img/new2019/maincon3_icon3.png) no-repeat center 0; background-size:60px auto}
+.maincon3 a:nth-child(4) .txt1{background: url(/common/web/img/new2019/maincon3_icon4.png) no-repeat center 0; background-size:70px auto}
+
+/* 2022-04-22 슬라이더 모바일에서 트러지는 현상 수정건 적용 시작 */
+@media all and (max-width:576px){
+	.maincon2.wCon2{margin-top: 0;}
+	.maincon2.wCon2 .slide .conDiv>.img{padding-top:56%; margin-top: -20px;}
+	.maincon2.n-center .conDiv .txt pre{padding:0 5px;}
+	.maincon2.wCon2 .conDiv .txt span.txt2{margin-top:46px;}
+	.maincon2.n-center .conDiv .txt a{width:190px;height:40px;margin-top:13px;line-height:40px;font-size:12px;}
+	.maincon2.n-center .conDiv .txt pre{margin-top:13px;}
+	.maincon2.wCon2 .rollBtDiv2{bottom:12%;}
+}
+/* 2022-04-22 슬라이더 모바일에서 트러지는 현상 수정건 적용 끝 */
+
+
+

@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh -->
+<html lang="ko">
+    <!-- 
+  프로젝트명	: 범농협 통합멤버십 시스템
+  파일명		: header.jsp
+  작성일		: 2018. 6. 05.
+  작성자		: PI180072 유영남
+  설명			: 공통header JSP
+  수정내역(수정일 수정자 - 수정내용)
+  **************************************************************************
+  2018. 6. 05. 유영남 - 최초생성
+  2020. 5. 28. 송준희 - 운영 web에 맞게 구글 Tag Data 생성하도록 js 호출 테그 추가(일자 테그)
+  2022. 06. 09. 강   문 - 국적 변경 수정 , select2 플러그인 추가
+ --><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="Generator" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi"
+        />
+        <meta name="author" content="https://www.nhmembers.co.kr" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="농업인이 행복한 국민의 농협! 새롭게 선보이는 농협의 통합멤버십" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="NH멤버스" />
+        <meta property="og:url" content="https://www.nhmembers.co.kr" />
+        <meta property="og:title" content="NH멤버스" />
+        <meta property="og:description" content="농업인이 행복한 국민의 농협! 새롭게 선보이는 농협의 통합멤버십" />
+        <meta property="og:image" content="https://www.nhmembers.co.kr/images/nhmem/preview2021.jpg" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.nhmembers.co.kr/common/web/img/favicon.png" />
+        <title>NH멤버스 - 전환 - 모바일 상품권 전환</title>
+        <!--  2020.02.11 웹 접근성 수정 -->
+        <link rel="stylesheet" href="./nhm_files/swiper.min.css" />
+        <link rel="stylesheet" href="./nhm_files/mCustomScrollbar.css" />
+        <link rel="stylesheet" href="./nhm_files/common.css" />
+        <link rel="stylesheet" href="./nhm_files/nh.css" />
+        <link rel="stylesheet" href="./nhm_files/nh2.css" />
+        <link rel="stylesheet" href="./nhm_files/nhmem.css" />
+        <link rel="stylesheet" href="./nhm_files/main.css" />
+        <!-- 추가 송준희 20191118 -->
+        <!-- 2022.06.09 강문 국적 변경 수정 , select2 플러그인 추가  -->
+        <link rel="stylesheet" href="./nhm_files/select2.min.css" />
+
+        <!-- 웹로그 싸이도록 수정 임시 20210311 이서진 -->
+
+        <!-- 웹로그 싸이도록 수정 임시 20210311 이서진 -->
+
+        <script type="text/javascript" src="./nhm_files/jquery-1.8.2.min.js"></script>
+
+        <!--[if !ie 9]><!-->
+        <script type="text/javascript" src="./nhm_files/jquery.placeholder.js"></script>
+
+        <script type="text/javascript" src="./nhm_files/swiper.min.js"></script>
+
+        <!-- 2022.06.09 강문 국적 변경 수정 , select2 플러그인 추가  -->
+        <script src="./nhm_files/select2.min.js"></script>
+
+        <!--[if !ie 9]><!-->
+        <script type="text/javascript" src="./nhm_files/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <form id="searchFormGnb" name="searchFormGnb">
+                <input type="hidden" name="searchKeyword" id="searchKeyword" value="" />
+            </form>
+            <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh#container" class="passGnb"
+                >본문 바로가기</a
+            >
+            <!-- 접근성 : 3/8 본문 바로가기로 수정 --><!-- 접근성 : 1/29 본문 건너뛰기 추가 -->
+            <div id="header">
+                <div class="inner">
+                    <div class="utils">
+                        <div class="my-menu">
+                            <a href="https://www.nhmembers.co.kr/nhmem/login/logout.snh">로그아웃</a>
+                            <a href="https://www.nhmembers.co.kr/nhmem/myp/mypMbInf.snh">정보수정</a>
+                            <!-- <a href="/nhmem/myp/mypMyNh.snh">나의 <span class="font-msr-medium">NH</span></a> -->
+
+                            <a href="https://www.nhmembers.co.kr/nhmem/myp/mypMyNh.snh"
+                                >나의 <span class="font-msr-medium">NH</span></a
+                            >
+                            <a href="https://www.nhmembers.co.kr/nhmem/cus/cusAnnounceList.nh">고객센터</a>
+                        </div>
+
+                        <div class="app-download">
+                            <button type="button" onclick="location.href=&#39;/nhmem/etc/etcAppDownInfo.nh&#39;">
+                                <img
+                                    src="./nhm_files/web_btn_appDownload.png"
+                                    alt="APP 다운로드"
+                                /><!-- 접근성 : 1/29 img alt 추가 -->
+                            </button>
+                        </div>
+                    </div>
+                    <h1>
+                        <a href="https://www.nhmembers.co.kr/"
+                            ><img src="./nhm_files/web_logo_color.png" alt="NHmembers"
+                        /></a>
+                    </h1>
+                    <div class="gnb-container clear">
+                        <div class="gnb-one-container">
+                            <a href="https://www.nhmembers.co.kr/nhmem/nep/nepMemInfo.nh" class="gnb-one">새롭게,</a>
+                            <div class="gnb-two-container">
+                                <a href="https://www.nhmembers.co.kr/nhmem/nep/nepMemInfo.nh" class="gnb-two">
+                                    <p>
+                                        <span>NHmembers 소개</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/nep/nepBiInfo.nh" class="gnb-two">
+                                    <p>
+                                        <span>BI소개</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/nep/nepMemCardInfo.nh" class="gnb-two">
+                                    <p>
+                                        <span>NHmembers 카드 소개</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/nep/nepBrandList.nh" class="gnb-two">
+                                    <p>
+                                        <span>브랜드 소개</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gnb-one-container">
+                            <a href="https://www.nhmembers.co.kr/nhmem/maa/maaAppInfo.nh" class="gnb-one">
+                                선보이다.
+                            </a>
+                            <div class="gnb-two-container">
+                                <a href="https://www.nhmembers.co.kr/nhmem/maa/maaAppInfo.nh" class="gnb-two">
+                                    <p>
+                                        <span>APP 소개</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/maa/maaEvtList.nh" class="gnb-two">
+                                    <p>
+                                        <span>이벤트</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/maa/maaCoupList.nh" class="gnb-two">
+                                    <p>
+                                        <span>쿠폰</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gnb-one-container">
+                            <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCoinCharge.snh" class="gnb-one"
+                                ><span class="font-msr-bold">NHpoint</span></a
+                            >
+                            <div class="gnb-two-container" style="width: 300px">
+                                <a
+                                    href="https://www.nhmembers.co.kr/nhmem/pnt/pntCoinCharge.snh"
+                                    class="gnb-two"
+                                    style="width: 100px; margin: 25px 0 45px 35px; text-align: center"
+                                >
+                                    <p>
+                                        <span>충전</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <div class="gnb-thr-container" style="top: 32px; left: 140px">
+                                    <a
+                                        class="temp_show_danal"
+                                        href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointBankCharge.snh"
+                                        >- 계좌이체 충전</a
+                                    >
+                                    <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCoinCharge.snh">- 잔돈적립</a>
+                                    <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointPgCharge.snh"
+                                        >- 신용카드 결제 충전</a
+                                    >
+                                </div>
+                                <a
+                                    href="https://www.nhmembers.co.kr/nhmem/pnt/pntCouponCharge.snh"
+                                    class="gnb-two"
+                                    style="width: 100px; margin: 25px 0 45px 35px; text-align: center"
+                                    ><!-- 2018-08-31 margin값 수정 -->
+                                    <p>
+                                        <span>전환</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <div class="gnb-thr-container" style="top: 98px; left: 140px">
+                                    <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCouponCharge.snh">- 쿠폰 전환</a>
+                                    <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh"
+                                        >- 모바일 상품권 전환</a
+                                    >
+
+                                    <a
+                                        href="https://www.nhmembers.co.kr/nhmem/pnt/pntTupPointCvIndex.snh"
+                                        class="temp_show"
+                                        >- 제휴사 포인트 전환</a
+                                    >
+                                </div>
+                                <a
+                                    href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointDonatePartner.snh"
+                                    class="gnb-two"
+                                    style="width: 100px; margin: 25px 0 0 35px; text-align: center"
+                                >
+                                    <p>
+                                        <span>기부</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <a
+                                    href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointGift.snh"
+                                    class="gnb-two"
+                                    style="width: 100px; margin: 25px 0 0 35px; text-align: center"
+                                >
+                                    <p>
+                                        <span>선물</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                                <a
+                                    href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointCashBack.snh"
+                                    class="gnb-two"
+                                    style="width: 100px; margin: 25px 0 0 35px; text-align: center"
+                                >
+                                    <p>
+                                        <span>캐시백</span>
+                                        <strong></strong>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:" class="gnbSrchBt">검색 하기</a>
+                    <!-- 접근성 : 2/12 alt 삭제 -->
+                </div>
+                <div class="gnbSrchDiv">
+                    <p class="txt">검색어를 입력해 주세요!</p>
+                    <div class="input-area">
+                        <input type="text" name="wSearchKeyword" id="wSearchKeyword" title="검색어를 입력해 주세요" />
+                        <!-- 접근성 : 1/29 title 추가  -->
+                        <a href="javascript:" class="inputXbt"
+                            ><img src="./nhm_files/join_input_xBt.png" alt="입력 삭제 버튼" />
+                            <!-- 접근성 : 1/29 img alt 추가, 2/11 img alt 수정  --></a
+                        >
+                        <a href="javascript:searchGnb();" class="srchBt"
+                            ><img src="./nhm_files/header_srch_btn.gif" alt="검색하기버튼"
+                        /></a>
+                    </div>
+                </div>
+                <div class="gnb-bg"></div>
+            </div>
+
+            <!-- 모바일 헤더 -->
+            <div class="mHeader">
+                <div>
+                    <!-- 2018-07-04 구조 수정 -->
+
+                    <h2 class="m-sub-tit">모바일 상품권 전환</h2>
+                    <a href="javascript:history.back();" class="mBackBt"></a>
+
+                    <a href="javascript:" class="menuBtn"><img src="./nhm_files/m_gnb_btn.png" alt="" /></a>
+                </div>
+                <!-- // 2018-07-04 구조 수정 -->
+            </div>
+            <!-- // mHeader -->
+            <!-- 
+			모바일 헤더
+			<div class="mHeader">
+				<div>
+					<a href="javascript:" class="logo"><img src="/common/web/img/m_logo.png" alt="" /></a>메인이랑 서브 해더 부분 다름
+					<a href="javascript:" class="menuBtn"><img src="/common/web/img/m_gnb_btn.png" alt="" /></a>
+				</div>
+			</div>// mHeader
+ -->
+            <div class="mMenuArea" style="z-index: 200">
+                <!-- 모바일 메뉴 -->
+                <div class="top">
+                    <a href="https://www.nhmembers.co.kr/" class="homeBt"
+                        ><img src="./nhm_files/m_home_btn.png" alt=""
+                    /></a>
+                    <a href="javascript:btnSearch();" class="srchBt"
+                        ><img src="./nhm_files/m_gnb_srch_btn.png" alt=""
+                    /></a>
+                    <!-- <a href="javascript:$('.mMenuArea .top .closeBt').trigger('click');" class="srchBt"><img src="/common/web/img/m_gnb_srch_btn.png" alt="" /></a> -->
+                    <a href="javascript:" class="closeBt"><img src="./nhm_files/m_close_btn.png" alt="" /></a>
+                    <div class="util">
+                        <a href="https://www.nhmembers.co.kr/nhmem/login/logout.snh">로그아웃</a>
+                        <a href="https://www.nhmembers.co.kr/nhmem/myp/mypMbInf.snh">정보수정</a>
+
+                        <a href="https://www.nhmembers.co.kr/nhmem/myp/mypMyNh.snh">나의 NH</a>
+                        <a href="https://www.nhmembers.co.kr/nhmem/cus/cusAnnounceList.nh">고객센터</a>
+                    </div>
+                </div>
+                <div class="gnbArea" style="height: 737px">
+                    <div class="oneD">
+                        <a href="javascript:">새롭게,</a>
+                        <div class="twoD">
+                            <a href="https://www.nhmembers.co.kr/nhmem/nep/nepMemInfo.nh">NHmembers 소개</a>
+                            <a href="https://www.nhmembers.co.kr/nhmem/nep/nepBiInfo.nh">BI 소개</a>
+                            <a href="https://www.nhmembers.co.kr/nhmem/nep/nepMemCardInfo.nh">NHmembers 카드 소개</a>
+                            <a href="https://www.nhmembers.co.kr/nhmem/nep/nepBrandList.nh">브랜드 소개</a>
+                        </div>
+                        <!-- // twoD -->
+                    </div>
+
+                    <div class="oneD">
+                        <a href="javascript:">선보이다.</a>
+                        <div class="twoD">
+                            <a href="https://www.nhmembers.co.kr/nhmem/maa/maaAppInfo.nh">APP 소개</a>
+                            <a href="https://www.nhmembers.co.kr/nhmem/maa/maaEvtList.nh">이벤트</a>
+                            <a href="https://www.nhmembers.co.kr/nhmem/maa/maaCoupList.nh">쿠폰</a>
+                        </div>
+                        <!-- // twoD -->
+                    </div>
+
+                    <div class="oneD">
+                        <a href="javascript:" class="font-msr-bold">NHpoint</a>
+                        <div class="twoD">
+                            <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCoinCharge.snh">충전</a>
+                            <div class="thrD">
+                                <a
+                                    class="temp_show_danal"
+                                    href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointBankCharge.snh"
+                                    >- 계좌이체 충전</a
+                                >
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCoinCharge.snh"
+                                    >- <span>잔돈적립</span></a
+                                >
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointPgCharge.snh"
+                                    >- <span>신용카드 결제 충전</span></a
+                                >
+                            </div>
+                            <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCouponCharge.snh">전환</a>
+                            <div class="thrD">
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCouponCharge.snh"
+                                    >- <span>쿠폰 전환</span></a
+                                >
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh"
+                                    >- <span>모바일 상품권 전환</span></a
+                                >
+
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntTupPointCvIndex.snh" class="temp_show"
+                                    >- <span>제휴사 포인트 전환</span></a
+                                >
+                            </div>
+                            <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointDonatePartner.snh">기부</a>
+                            <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointGift.snh">선물</a>
+                            <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointCashBack.snh">캐시백</a>
+                        </div>
+                        <!-- // twoD -->
+                    </div>
+                </div>
+            </div>
+            <!-- // menuArea -->
+
+            <!-- <div class="gnbSrchDiv">모바일 검색창 -->
+            <div class="mSrchDiv" style="height: 733px">
+                <!-- 모바일 검색창 -->
+                <p class="txt">검색어를 입력해 주세요!</p>
+                <div class="input-area">
+                    <input type="text" name="mSearchKeyword" id="mSearchKeyword" value="" />
+                    <a href="javascript:" class="inputXbt"
+                        ><img src="./nhm_files/join_input_xBt.png" alt="입력 삭제 버튼"
+                    /></a>
+                    <!-- 접근성 : 2/11 alt 추가 -->
+                    <a href="javascript:searchGnb();" class="srchBt"
+                        ><img src="./nhm_files/m_header_srch_btn.gif" alt=""
+                    /></a>
+                </div>
+                <a href="javascript:" class="closeSrchBt"><img src="./nhm_files/m_close_btn2.png" alt="" /></a>
+            </div>
+            <!-- // mSrchDiv -->
+
+            <p class="blackBg" style="z-index: 150"></p>
+            <!-- // 모바일 헤더 -->
+
+            <script type="text/javascript">
+                var isRun = false
+                var tm1LmtPnt = '100000'
+                var ddLmtPnt = '300000'
+                var mmLmtPnt = '500000'
+
+                $(function () {
+                    $('.inputXbt').off('click')
+                    $('.inputXbt').on('click', function () {
+                        var parentId = $(this).parent().find('input').attr('id')
+
+                        $(this).parent().find('input').val('')
+                        $(this).css('display', 'none')
+
+                        if (parentId == 'giftCardNo' || parentId == 'mbeMcdbdPasswd') {
+                            resetResultPoint()
+                        }
+                    })
+
+                    $('#giftCardNo').on('keydown', function (event) {
+                        if (event.keyCode == 13) {
+                            giftCardCheck()
+                        } else {
+                            resetResultPoint()
+                        }
+                    })
+
+                    $('#mbeMcdbdPasswd').on('keydown', function () {
+                        resetResultPoint()
+                    })
+                })
+
+                /* pagination 페이지 링크 function */
+                function fn_egov_link_page(pageNo) {
+                    var url = '/nhmem/pnt/pntGiftCardChargeList.snh'
+                    var type = 'post'
+                    var data = 'pageIndex=' + pageNo + '&TR_TP_C=' + '05' + '&TR_RSN_C=' + '0503'
+                    var async = false
+                    submitAjax(url, type, async, data).done(reqSearchSuccess)
+                }
+
+                var reqSearchSuccess = function (data) {
+                    $('#searchResult').html(data)
+                }
+
+                $(document).ready(function () {
+                    doSubmit()
+                })
+
+                function doSubmit() {
+                    var url = '/nhmem/pnt/pntGiftCardChargeList.snh'
+                    var type = 'post'
+                    var data = 'pageIndex=' + '1' + '&TR_TP_C=' + '05' + '&TR_RSN_C=' + '0503'
+                    var async = false
+                    submitAjax(url, type, async, data).done(reqSearchSuccess)
+                }
+
+                //모바일 상품권 번호 확인
+                var giftCardCheck = function () {
+                    var giftCardNo = $('#giftCardNo').val()
+                    var MCHT_ID = $('#MCHT_ID').val()
+                    var TUP_ID = $('#TUP_ID').val()
+                    var mbeMcdbdPasswd = $('#mbeMcdbdPasswd').val()
+
+                    /* 김상우 추가 */
+                    var mchtId = $('#MCHT_ID').val()
+                    var tupId = $('#TUP_ID').val()
+
+                    if (mchtId == '' || tupId == '') {
+                        alert('전환 상품권 종류를 선택해 주세요.')
+                        return false
+                    }
+                    /* 김상우 추가 */
+
+                    if (MCHT_ID == '' && TUP_ID == '') {
+                        alert('전환상품권을 선택해주세요.')
+                        return
+                    }
+
+                    if (giftCardNo == '') {
+                        alert('모바일 상품권 번호를 입력해주세요.')
+                        return
+                    }
+
+                    if (MCHT_ID == '6900001' && TUP_ID == '690000') {
+                        if (mbeMcdbdPasswd == '' || mbeMcdbdPasswd.length != 4) {
+                            alert('인증번호 4자리를 입력해주세요.')
+                            return false
+                        }
+                    } else {
+                        mbeMcdbdPasswd = ''
+                    }
+
+                    var url = '/nhmem/pnt/pntGiftCardCheck.snh'
+                    var type = 'post'
+                    var data = {
+                        MBE_MCDBD_NO: giftCardNo,
+                        MCHT_ID: $('#MCHT_ID').val(),
+                        TUP_ID: $('#TUP_ID').val(),
+                        MBE_MCDBD_PASSWD: mbeMcdbdPasswd,
+                    }
+                    var async = false
+
+                    submitAjax(url, type, async, data).done(reqGiftCardCheckSuccess)
+                }
+
+                function reqGiftCardCheckSuccess(data) {
+                    if (data.resultCode == '0000') {
+                        // 북앤라이프 도서문화 상품권
+                        if (data.TUP_ID == '690000' && data.MCHT_ID == '6900001') {
+                            alert('사용 가능한 상품권 입니다.' + '\n(NH포인트 전환 시 8% 수수료 발생)')
+
+                            // 북앤라이프 도서문화 상품권 전환 세부내역 펼쳐보기(토글) 내용
+                            $('#cvPsbAm').text(numberWithCommas(parseInt(data.MBE_MCDBD_BAC)) + 'P')
+                            $('#cvFee').text(numberWithCommas(parseInt(data.MBE_MCDBD_BAC - data.CHGG_PNT)) + 'P')
+                            $('#rvgXpcPnt').text(numberWithCommas(parseInt(data.CHGG_PNT)) + 'P')
+
+                            $('#toPoint').val(parseInt(data.CHGG_PNT))
+                            $('#toCvPsbAm').val(parseInt(data.MBE_MCDBD_BAC))
+                            $('#resultPoint').html(numberWithCommas(parseInt(data.CHGG_PNT)) + '<span>P</span>')
+                        } else {
+                            alert('사용가능한 상품권입니다. 아래 전환하기 버튼을 클릭해주세요.')
+
+                            $('#toPoint').val(parseInt(data.MBE_MCDBD_BAC))
+                            $('#toCvPsbAm').val(parseInt(data.MBE_MCDBD_BAC))
+                            $('#resultPoint').html(numberWithCommas(parseInt(data.MBE_MCDBD_BAC)) + '<span>P</span>')
+                        }
+
+                        $('#chkGiftCard').val('Y')
+                    } else {
+                        alert(data.resultMessage)
+                        resetResultPoint()
+                    }
+                }
+
+                var validationGiftCard = function () {
+                    var giftCardNo = $('#giftCardNo').val()
+                    var chkGiftCard = $('#chkGiftCard').val()
+                    var toPoint = $('#toPoint').val()
+                    var dayGiftCardPnt = $('#dayGiftCardPnt').val()
+                    var monthGiftCardPnt = $('#monthGiftCardPnt').val()
+                    var mbeMcdbdPasswd = $('#mbeMcdbdPasswd').val()
+
+                    /* 김상우 추가 */
+                    var mchtId = $('#MCHT_ID').val()
+                    var tupId = $('#TUP_ID').val()
+
+                    if (mchtId == '' && tupId == '') {
+                        alert('전환 상품권 종류를 선택해 주세요.')
+                        return false
+                    }
+                    /* 김상우 추가 */
+
+                    if (giftCardNo == '') {
+                        alert('모바일 상품권 번호를 입력해주세요.')
+                        return false
+                    }
+
+                    // 북앤라이프 도서문화 상품권 일때 인증 번호 확인
+                    if (mchtId == '6900001' && tupId == '690000') {
+                        if (mbeMcdbdPasswd == '' || mbeMcdbdPasswd.length != 4) {
+                            alert('인증번호 4자리를 입력해주세요.')
+                            return false
+                        }
+                    }
+
+                    if (chkGiftCard == 'N') {
+                        alert('모바일 상품권 번호를 확인해주세요.')
+                        return false
+                    }
+
+                    //모바일 상품권 한도 체크
+                    if (Number(toPoint) > Number(tm1LmtPnt)) {
+                        alert('1회 모바일 상품권 전환 한도는 최대 ' + tm1LmtPnt + ' 까지 가능합니다.')
+                        return false
+                    } else if (Number(dayGiftCardPnt) + Number(toPoint) > Number(ddLmtPnt)) {
+                        alert('1일 모바일 상품권 전환 한도는 최대 ' + ddLmtPnt + ' 까지 가능합니다.')
+                        return false
+                    } else if (Number(monthGiftCardPnt) + Number(toPoint) > Number(mmLmtPnt)) {
+                        alert('한달 모바일 상품권 전환 한도는 최대 ' + mmLmtPnt + ' 까지 가능합니다.')
+                        return false
+                    }
+
+                    return true
+                }
+
+                //숫자 3자리 콤마 정규식
+                var numberWithCommas = function (x) {
+                    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                }
+
+                //모바일 상품권 전환하기
+                var giftCardCharge = function () {
+                    var toPoint = $('#toPoint').val()
+                    var giftCardNo = $('#giftCardNo').val()
+                    var MCHT_ID = $('#MCHT_ID').val()
+                    var TUP_ID = $('#TUP_ID').val()
+
+                    var confirmMsg = ''
+
+                    if (validationGiftCard()) {
+                        confirmMsg =
+                            '전환한 포인트는 취소할 수 없으며,<br/>선물하기 및 캐시백, 타 포인트 재전환 등<br/>일부 제휴사 사용이 제한됩니다.<br/>포인트를 전환하시겠습니까?'
+                        openDivConfirm(confirmMsg, 'javascript:confirmOk();')
+                    }
+                }
+
+                function confirmOk() {
+                    if (isRun == true) {
+                        return
+                    }
+
+                    isRun = true
+
+                    var mbeMcdbdPasswd = $('#mbeMcdbdPasswd').val()
+                    var mchtId = $('#MCHT_ID').val()
+                    var tupId = $('#TUP_ID').val()
+
+                    // 인증번호는 북앤라이프 도서문화 상품권 일때만 보낸다.
+                    if (mchtId != '6900001' || tupId != '690000') {
+                        mbeMcdbdPasswd = ''
+                    }
+
+                    var url = '/nhmem/pnt/pntDoGiftCardCharge.snh'
+                    var type = 'post'
+                    var data = {
+                        MBE_MCDBD_NO: $('#giftCardNo').val(),
+                        MBE_MCDBD_UG_AMT: $('#toCvPsbAm').val(),
+                        CHGG_PNT: $('#toPoint').val(),
+                        MCHT_ID: $('#MCHT_ID').val(),
+                        TUP_ID: $('#TUP_ID').val(),
+                        MBE_MCDBD_PASSWD: mbeMcdbdPasswd,
+                    }
+                    var async = false
+
+                    submitAjax(url, type, async, data).done(reqGiftCardChargeSuccess)
+                }
+
+                function reqGiftCardChargeSuccess(data) {
+                    if (data.resultCode == '0000') {
+                        //모바일 상품권 포인트 전환 완료 랜덤 문구 수정 수정시작 2021-02-03 이서진
+                        alert('포인트 전환 처리가 완료되었습니다.')
+                        //alert(data.resultMessage);
+                        //모바일 상품권 포인트 전환 완료 랜덤 문구 수정 수정종료 2021-02-03 이서진
+                        $('#divAlert').attr('href', "javascript:submitForm('pntGiftCardChargeForm');")
+                    } else if (data.resultCode == '4049') {
+                        // 2020-04-28 제한시간 표시 요청
+                        alert('상품권 전환가능 시간이 아닙니다. (제한시간 : 23시 50분 ~ 00시 10분)')
+                        isRun = false
+                    } else {
+                        alert(data.resultMessage)
+                        isRun = false
+                    }
+                }
+
+                //mcht_id, tup_id 세팅 김상우 추가
+                function giftCardConfirm(MCHT_ID, TUP_ID, SVC_LMT_ST_DTM, SVC_LMT_ED_DTM, MCHT_NM) {
+                    $('#MCHT_ID').val(MCHT_ID)
+                    $('#TUP_ID').val(TUP_ID)
+
+                    //20220614 한 스크립트에 alert 2개 안되서 위치 변경
+                    //20220328 알럿문구 재추가 (김진원차장요청)
+                    //20220322 모바일과 동일하게 주석처리
+                    //if(MCHT_ID == '1220001' && TUP_ID == '122000') {
+                    //	alert2("5만원 이하 권종만 전환 가능합니다.");
+                    //}
+
+                    // 북앤라이프 도서문화 상품권 일때만 전환 세부내역 펼쳐보기 , 인증번호 노출
+                    if (MCHT_ID == '6900001' && TUP_ID == '690000') {
+                        $('.toggle_com.pnt_change').show()
+                        $('.input-area.mbe_password').show()
+                    } else {
+                        $('.toggle_com.pnt_change').hide()
+                        $('.input-area.mbe_password').hide()
+                    }
+
+                    // ARAM 제휴사전환 시간기준으로 오픈일자 체크 START
+                    var toDate = new Date()
+                    var yyyy = toDate.getFullYear()
+                    var mm = toDate.getMonth() + 1
+                    var dd = toDate.getDate()
+                    var _hh = toDate.getHours()
+                    var _mm = toDate.getMinutes()
+
+                    var currentDateTime =
+                        yyyy +
+                        ((mm > 9 ? '' : '0') + mm) +
+                        ((dd > 9 ? '' : '0') + dd) +
+                        ((_hh > 9 ? '' : '0') + _hh) +
+                        ((_mm > 9 ? '' : '0') + _mm) +
+                        '00'
+
+                    $('#SVC_LMT_ST_DTM').val(SVC_LMT_ST_DTM)
+                    $('#SVC_LMT_ED_DTM').val(SVC_LMT_ED_DTM)
+                    $('#MCHT_NM').val(MCHT_NM)
+
+                    if (MCHT_ID != '') {
+                        if (Number(SVC_LMT_ST_DTM) >= Number(currentDateTime)) {
+                            alert2('<center>' + MCHT_NM + '<br />전환서비스 오픈 예정입니다.</center>')
+                            return false
+                        } else {
+                            if (Number(SVC_LMT_ED_DTM) <= Number(currentDateTime)) {
+                                alert2('<center>' + MCHT_NM + '<br />전환서비스가 종료 되었습니다.</center>')
+                                return false
+                            }
+                        }
+                    }
+                    // ARAM 제휴사전환 시간기준으로 오픈일자 체크 END
+
+                    //BAS_DT 기준으로 제휴사별 시스템 작업 안내  START
+                    var coop_message = 'N'
+                    var nhgift_message = 'N'
+
+                    if (TUP_ID == '650000') {
+                        if (coop_message == 'Y') {
+                            alert2(
+                                '<center>제휴사 시스템 작업으로 인한<br />쿠프마케팅 NH포인트 교환권 전환서비스<br />일시 중단 안내<br />(공지사항 참조)</center>'
+                            )
+                            return false
+                        }
+                    }
+                    if (MCHT_ID == '1220001' && TUP_ID == '122000') {
+                        if (nhgift_message == 'Y') {
+                            alert2(
+                                '<center>제휴사 시스템 작업으로 인한<br />농촌사랑 모바일 상품권 전환서비스<br />일시 중단 안내<br />(공지사항 참조)</center>'
+                            )
+                            return false
+                        } else {
+                            //20220614 한 스크립트에 alert 2개 안되서 위치 변경
+                            alert2('5만원 이하 권종만 전환 가능합니다.')
+                        }
+                    }
+                    //BAS_DT 기준으로 제휴사별 시스템 작업 안내  END
+
+                    // 쿠폰 종류 변환 시 변환 예상 포인트 초기화
+                    resetResultPoint()
+                }
+
+                var goCashBack = function (apvLedDtlNo, cbPsbPntNum) {
+                    var url = '/nhmem/pnt/pntPointCashBack.snh'
+                    var type = 'post'
+
+                    $('#APV_LED_DTL_NO').val(apvLedDtlNo)
+                    $('#CB_PSB_PNT_NUM').val(cbPsbPntNum)
+
+                    submitForm('cashbackForm', type, url)
+                }
+
+                function resetResultPoint() {
+                    $('#cvPsbAm').text('P')
+                    $('#cvFee').text('P')
+                    $('#rvgXpcPnt').text('P')
+
+                    $('#toPoint').val('')
+                    $('#toCvPsbAm').val('')
+                    $('#resultPoint').html('-<span>P</span>')
+                    $('#chkGiftCard').val('N')
+                }
+
+                /*
+			모바일 상품권 번호를 입력해주세요.
+			포인트 전환 처리가 완료되었습니다.
+			상품권 종류 및 번호를 확인해주세요.
+			전환한 포인트는 취소할 수 없습니다. [선택한 상품권 종류]로 포인트를 전환하시겠습니까?
+			*/
+            </script>
+
+            <div id="container" tabindex="0">
+                <!-- 접근성 : 2/11 tabindex="0" 추가 -->
+
+                <!-- 
+  프로젝트명	: 범농협 통합멤버십 시스템
+  파일명		: lnb.jsp
+  작성일		: 2018. 7. 11.
+  작성자		: PI180078 최준희
+  설명			: NHpoint > 서브 메뉴 JSP
+  수정내역(수정일 수정자 - 수정내용)
+  **************************************************************************
+  2018. 7. 11. 최준희 - 최초생성
+  2020.12. 15. 박지선 - 제휴사포인트전환 추가
+  2020.12. 22. 박지선 - 공통코드(BAS_DT)를 참조하여 제휴사전환 메뉴 오픈
+ -->
+
+                <div class="pathDiv">
+                    <div class="breadcrumbs clear">
+                        <a href="https://www.nhmembers.co.kr/">HOME</a>
+                        <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCoinCharge.snh">NHpoint</a>
+
+                        <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCouponCharge.snh">전환</a>
+
+                        <div>
+                            <!-- 2018-07-10 구조 수정 -->
+                            <a href="javascript:" class="current">모바일 상품권 전환</a>
+                            <div class="moreMenu" style="overflow: hidden">
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCoinCharge.snh">충전</a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointPgCharge.snh" class="thrD"
+                                    >- 신용카드 결제 충전</a
+                                >
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCoinCharge.snh" class="thrD"
+                                    >- 잔돈적립</a
+                                >
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCouponCharge.snh">전환</a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntCouponCharge.snh" class="thrD"
+                                    >- 쿠폰 전환</a
+                                >
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh" class="thrD"
+                                    >- 모바일 상품권 전환</a
+                                >
+
+                                <a
+                                    href="https://www.nhmembers.co.kr/nhmem/pnt/pntTupPointCvIndex.snh"
+                                    class="thrD temp_show"
+                                    >- 제휴사 포인트 전환</a
+                                >
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointDonatePartner.snh">기부</a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointGift.snh">선물</a>
+                                <a href="https://www.nhmembers.co.kr/nhmem/pnt/pntPointCashBack.snh">캐시백</a>
+                            </div>
+                        </div>
+                        <!-- // 2018-07-10 구조 수정 -->
+                    </div>
+
+                    <h2 class="sub-tit">모바일 상품권 전환</h2>
+                    <p class="sub-tit-v3 mt30">모바일 상품권 번호를 입력하여 NHpoint를 전환합니다</p>
+                    <!-- 2018-06-21 추가 -->
+                </div>
+
+                <form
+                    name="pntGiftCardChargeForm"
+                    id="pntGiftCardChargeForm"
+                    action="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh"
+                    method="post"
+                >
+                    <input type="hidden" name="chkGiftCard" id="chkGiftCard" value="N" />
+                    <input type="hidden" name="toPoint" id="toPoint" value="" />
+                    <input type="hidden" name="toCvPsbAm" id="toCvPsbAm" value="" />
+                    <input type="hidden" name="monthGiftPnt" id="monthGiftCardPnt" value="0" />
+                    <input type="hidden" name="dayGiftPnt" id="dayGiftCardPnt" value="0" />
+                </form>
+
+                <form
+                    id="cashbackForm"
+                    name="cashbackForm"
+                    action="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh"
+                    method="post"
+                >
+                    <input type="hidden" id="APV_LED_DTL_NO" name="APV_LED_DTL_NO" />
+                    <input type="hidden" id="CB_PSB_PNT_NUM" name="CB_PSB_PNT_NUM" />
+                    <input type="hidden" id="TR_RSN_C" name="TR_RSN_C" value="0503" />
+                </form>
+
+                <div id="content">
+                    <!-- 김상우 수정 -->
+                    <!--2019-11-01 모바일상품권 전환-->
+                    <div class="myPoint">
+                        <div class="top">
+                            <div class="inner">
+                                <p class="txt1">안상환님의 보유 포인트</p>
+                                <p class="txt2">
+                                    <strong> 45<span class="p-txt">p</span> </strong>
+                                    <span></span>
+                                </p>
+                                <ul class="myPointInfo">
+                                    <li>
+                                        <p class="txt">전환가능 포인트</p>
+                                        <p class="number">
+                                            <strong> 500,000<span class="p-txt-v1">P</span> </strong>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="txt">총 전환 포인트</p>
+                                        <p class="number">
+                                            <strong> 0<span class="p-txt-v1">P</span> </strong>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="txt">총 환불가능 포인트</p>
+                                        <p class="number">
+                                            <strong> 0<span class="p-txt-v1">P</span> </strong>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    placeholder="ddd"
+                                    style="background: rgb(255, 255, 255); color: rgb(102, 102, 102)"
+                                />
+                            </div>
+                            <div class="tab-body">
+                                <div class="cont" style="display: block">
+                                    <div class="charge-box1 type2 fixed">
+                                        <div class="box">
+                                            <div class="select-area">
+                                                <a href="javascript:" title="전환 상품권 종류를 선택해 주세요."
+                                                    >전환 상품권 종류를 선택해 주세요.</a
+                                                >
+                                                <!-- 접근성 : 2/5 title 추가 -->
+                                                <div>
+                                                    <a
+                                                        href="javascript:giftCardConfirm(&#39;&#39;,&#39;&#39;,&#39;&#39;,&#39;&#39;)"
+                                                        class="active"
+                                                        >전환 상품권 종류를 선택해 주세요.</a
+                                                    >
+
+                                                    <a
+                                                        href="javascript:giftCardConfirm(&#39;6800001&#39;,&#39;680000&#39;,&#39;20220201000000&#39;,&#39;29991231235900&#39;,&#39;머니콘 NH포인트 교환권&#39;)"
+                                                        val="10"
+                                                        }=""
+                                                        >머니콘 NH포인트 교환권</a
+                                                    >
+
+                                                    <a
+                                                        href="javascript:giftCardConfirm(&#39;1220001&#39;,&#39;122000&#39;,&#39;20220201000000&#39;,&#39;29991231000000&#39;,&#39;농촌사랑 모바일 상품권&#39;)"
+                                                        val="12"
+                                                        }=""
+                                                        >농촌사랑 모바일 상품권</a
+                                                    >
+
+                                                    <a
+                                                        href="javascript:giftCardConfirm(&#39;6900001&#39;,&#39;690000&#39;,&#39;20220201000000&#39;,&#39;29991231000000&#39;,&#39;북앤라이프 도서문화상품권&#39;)"
+                                                        val="13"
+                                                        }=""
+                                                        >북앤라이프 도서문화상품권</a
+                                                    >
+
+                                                    <a
+                                                        href="javascript:giftCardConfirm(&#39;6500001&#39;,&#39;650000&#39;,&#39;20220201000000&#39;,&#39;29991231000000&#39;,&#39;쿠프마케팅 NH포인트 교환권&#39;)"
+                                                        val="14"
+                                                        }=""
+                                                        >쿠프마케팅 NH포인트 교환권</a
+                                                    >
+                                                </div>
+                                            </div>
+                                            <input type="hidden" id="MCHT_ID" name="MCHT_ID" value="" />
+                                            <input type="hidden" id="TUP_ID" name="TUP_ID" value="" />
+                                            <p class="box-tit mt30">모바일 상품권 번호 입력</p>
+                                            <div class="input-area">
+                                                <input
+                                                    type="text"
+                                                    id="giftCardNo"
+                                                    name="giftCardNo"
+                                                    value=""
+                                                    placeholder="상품권 번호를 입력해주세요"
+                                                    title="상품권 번호를 입력해주세요"
+                                                    maxlength="20"
+                                                />
+                                                <!-- 접근성 : 2/5 title 추가 -->
+                                                <a href="javascript:" class="inputXbt"
+                                                    ><img src="./nhm_files/join_input_xBt.png" alt="입력 삭제 버튼"
+                                                /></a>
+                                                <!-- 접근성 : 2/11 alt 추가 -->
+                                            </div>
+                                            <div class="input-area mbe_password" style="display: none">
+                                                <input
+                                                    type="text"
+                                                    id="mbeMcdbdPasswd"
+                                                    name="mbeMcdbdPasswd"
+                                                    value=""
+                                                    placeholder="인증번호 4자리를 입력해주세요"
+                                                    title="인증번호 4자리를 입력해주세요"
+                                                    maxlength="4"
+                                                />
+                                                <a href="javascript:" class="inputXbt"
+                                                    ><img src="./nhm_files/join_input_xBt.png" alt="입력 삭제 버튼"
+                                                /></a>
+                                            </div>
+                                            <p class="boxInBt">
+                                                <a href="javascript:giftCardCheck();" class="">확인</a>
+                                            </p>
+                                            <!-- 2018-07-18 추가 -->
+
+                                            <!-- 전환 세부내역 펼쳐보기 토글 -->
+                                            <div class="toggle_com pnt_change" style="display: none">
+                                                <a
+                                                    href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh#none"
+                                                    >전환 세부내역 펼쳐보기</a
+                                                >
+                                                <div class="toggle_detail">
+                                                    <dl>
+                                                        <dt>전환 가능 금액(단위 : 1,000원)</dt>
+                                                        <dd id="cvPsbAm">P</dd>
+                                                        <dt>전환 수수료 (8%)</dt>
+                                                        <dd id="cvFee">P</dd>
+                                                        <dt>적립 예상 포인트</dt>
+                                                        <dd id="rvgXpcPnt">P</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <!-- //전환 세부내역 펼쳐보기 토글 -->
+                                        </div>
+                                    </div>
+                                    <!--//2019-11-01 모바일상품권 전환-->
+                                    <div class="charge-box2">
+                                        <!-- 										<p class="txt">적립 예상 포인트</p> -->
+                                        <p class="total-point" id="resultPoint">-<span>P</span></p>
+                                    </div>
+                                    <div class="btn-cont mt40">
+                                        <a href="javascript:giftCardCharge();" class="btn-yellow">전환하기</a>
+                                        <!-- 접근성 : 2/12 button 삭제 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="pageIndex" id="pageIndex" value="1" />
+            <div class="charge-history">
+                <div class="inner">
+                    <a href="javascript:" class="slide-head">모바일 상품권 전환 안내 및 유의사항</a>
+                    <div class="slide-body">
+                        <!-- <p class="txt1">1) 전환 제한 사항</p> -->
+                        <div class="txt2">
+                            <!-- 									<p class="rwTxt"><span>-</span> 상품권 1매 전액에 대해서만 포인트 전환이 가능하며 권면 금액의 부분 전환은 불가능합니다.</p>
+									<p class="rwTxt"><span>-</span> 전환한 포인트는 취소가 불가능합니다.</p>
+									<p class="rwTxt"><span>-</span> 선물하기 및 캐시백 서비스(계좌이체)가 제한됩니다.</p>2018-06-27 텍스트 수정
+									<p class="rwTxt"><span>-</span> 특정 제휴사 전용 모바일 상품권은 해당 포인트 적립/사용처에서만 사용이 가능합니다.</p>
+									<p class="rwTxt"><span>-</span> 모바일 상품권 전환 한도는 1회 10만원/ 1일 30만원/ 1월 50만원입니다.</p> -->
+                            <p class="rwTxt"><span>-</span> 상품권에 기재된 전액을 전환 합니다.(부분 전환 불가)</p>
+                            <p class="rwTxt"><span>-</span> 전환된 포인트는 취소가 불가능 합니다.</p>
+                            <p class="rwTxt">
+                                <span>-</span> 전환된 포인트는 충전포인트와 같이 유효기간이 없으며, 포인트 사용 시
+                                소멸일자가 빠른 포인트부터 차감 후 전환 포인트가 사용됩니다. (포인트 사용 우선 순위를
+                                지정할 수 없습니다)
+                            </p>
+                            <p class="rwTxt">
+                                <span>-</span> 모바일 상품권으로 전환된 포인트는 선물하기 및 캐시백(계좌이체) 서비스가
+                                제한되며, 일부 제휴사 및 환금성 상품의 포인트 사용, 포인트 재전환이 제한됩니다.
+                            </p>
+                            <p class="rwTxt">
+                                <span>-</span> 특정 제휴사 전용 모바일 상품권은 해당 포인트 적립/사용처에서만 사용이
+                                가능합니다.
+                            </p>
+                            <p class="rwTxt">
+                                <span>-</span> 농촌사랑 모바일 상품권, 머니콘 NH포인트 교환권, 북앤라이프
+                                도서문화상품권의 경우 전환 건당 포인트의 60% 이상(1만원 이하는 80%) 사용한 경우에
+                                NH멤버스 앱/웹에서 모바일 상품권 전환 내역 조회 후 ‘환불신청하기’ 를 통해 전환 포인트를
+                                환불 받으실 수 있습니다.
+                            </p>
+                            <p class="rwTxt">
+                                <span>-</span> 모바일 상품권 전환 한도는 1회 10만 포인트, 1일 30만 포인트, 월간 최대
+                                50만 포인트 입니다.
+                            </p>
+                            <p class="rwTxt"><span>-</span> 전환 내역은 포인트 내역에서 확인하실 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="charge_hislist">
+                        <p class="txt1">전환 내역</p>
+                        <!-- 								<p class="txt2">총 전환 포인트 :  -->
+
+                        <!-- 											<span></span>P -->
+
+                        <!-- 								</p> -->
+
+                        <div id="searchResult">
+                            <!-- 
+  프로젝트명	: 범농협 통합멤버십 시스템
+  파일명		: ajaxPntGiftCardChargeList.jsp
+  작성일		: 2018. 6. 28.
+  작성자		: PI180078 최준희
+  설명			: NHpoint > 모바일 상품권 전환(전환 내역) JSP
+  수정내역(수정일 수정자 - 수정내용)
+  **************************************************************************
+  2018. 6. 28. 최준희 - 최초생성
+ -->
+
+                            <div class="sch-no-data">조회된 내역이 없습니다.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+  프로젝트명	: 범농협 통합멤버십 시스템
+  파일명		: footer.jsp
+  작성일		: 2018. 6. 05.
+  작성자		: PI180072 유영남
+  설명			: 공통footer JSP
+  수정내역(수정일 수정자 - 수정내용)
+  **************************************************************************
+  2018. 6. 05. 유영남 - 최초생성
+  2022. 3. 08. 박혜경 - 웹 접근성 수정
+ -->
+
+        <div id="footer">
+            <div class="inner">
+                <div class="logo blind">NHmembers</div>
+                <!-- 2022-03-08 포인트를 members로 수정  -->
+                <div class="policy-list">
+                    <a href="https://www.nhmembers.co.kr/nhmem/etc/siteMap.nh">사이트맵</a
+                    ><!-- 2018-07-09 텍스트 수정 -->
+                    <a href="https://www.nhmembers.co.kr/nhmem/etc/etcUsingPolicy.nh">이용약관</a>
+                    <a href="https://www.nhmembers.co.kr/nhmem/etc/etcPrivInfoProcPolicy.nh">개인정보처리방침</a>
+                    <a href="https://www.nhmembers.co.kr/nhmem/etc/etcPrivInfoUsingPolicy.nh"
+                        >개인정보 이용 · 제공내역 조회 안내</a
+                    ><!-- 2018-10-04 추가 -->
+                    <a href="https://www.nhmembers.co.kr/nhmem/etc/etcAppDownInfo.nh" class="appBtn">앱다운</a
+                    ><!-- 2018-07-04 모바일 app다운버튼 추가 -->
+                </div>
+                <p class="address">
+                    (04517) 서울시 중구 통일로 120 (중구 충정로 1가)<br />
+                    사업자등록번호 : 104-86-39742. 콜센터 : 1644-7226.
+                </p>
+                <p class="copyright">Copyright 2018. NHmembers All rights reserved.</p>
+
+                <p class="qrCode"><img src="./nhm_files/nh_qrcode.jpg" alt="NHmembers APP 다운로드 QR 코드" /></p>
+                <!-- 접근성 : 1/29 img alt 추가 --><!-- 02-11 수정 -->
+                <!-- 접근성 인증 마크 2019에서 2021로 변경 20210406 이서진 -->
+                <!-- <p class="wa"><a title="새창 열림" href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank"><img src="/common/web/img/new2019/wa.gif" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)" width="70px" height="50px"></a></p>접근성 : 2/24 추가 -->
+                <p class="wa">
+                    <a title="새창 열림" href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank">
+                        <img
+                            src="./nhm_files/wa_logo2022.png"
+                            alt="과학기술정보통신부 WEB 접근성 한국웹접근성인증평가원 2022년 2월 22일부터 2023년 2월 21일까지"
+                            width="70px"
+                            height="50px"
+                        />
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="alert-wrap loginAlert" style=" ;">
+            <!-- 그냥 나오는 팝업 : normal이 addClass되어야함. 특정버튼클릭할때 나오는 팝업 : loginAlert이 addClass -->
+            <div class="alertPop" tabindex="0">
+                <div class="alertCont">
+                    <div class="alertTit" id="alertTit"></div>
+                </div>
+                <div class="alertClose taC">
+                    <a href="javascript:" id="divAlert" class="cancelBt">확인</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert-wrap loginAlert2" style=" ;">
+            <!-- 그냥 나오는 팝업 : normal이 addClass되어야함. 특정버튼클릭할때 나오는 팝업 : loginAlert이 addClass -->
+            <!-- 2020.02.03 팝업 포커스를 위해 tabindex 추가 -->
+            <div class="alertPop" tabindex="0">
+                <div class="alertCont">
+                    <div class="alertTit" id="confirmTit"></div>
+                </div>
+                <div class="alertClose">
+                    <a href="javascript:" id="confirmCnl" class="cancelBt">취소</a>
+                    <a href="javascript:" id="confirmOk" class="cancelBt">확인</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="vvpopup_mask"></div>
+        <div class="vpopup" id="vpop_con">
+            <div class="vpop_tit">알림</div>
+            <div class="vpop_con_wrap">
+                <p id="newAlertTit"></p>
+            </div>
+            <div class="vpop_btn_area">
+                <ul>
+                    <!-- <li><a href="#" class="btn_gray pop_close" role="button">취소</a></li> -->
+                    <li>
+                        <a
+                            href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh#"
+                            class="btn_green pop_close"
+                            role="button"
+                            >확인</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <a
+                href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh#"
+                class="vbtn_close pop_close"
+                role="button"
+                >알람 팝업 닫기</a
+            >
+        </div>
+        <!-- //vpopup -->
+        <div class="vpopup" id="vpop_con2">
+            <div class="vpop_tit">알림</div>
+            <div class="vpop_con_wrap">
+                <p id="newAlertTit2"></p>
+            </div>
+            <div class="vpop_btn_area">
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh#"
+                            class="btn_gray pop_close"
+                            id="confirmCnl1"
+                            role="button"
+                            >취소</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh#"
+                            class="btn_green pop_close"
+                            id="confirmOk1"
+                            role="button"
+                            >확인</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <a
+                href="https://www.nhmembers.co.kr/nhmem/pnt/pntGiftCardCharge.snh#"
+                class="vbtn_close pop_close"
+                role="button"
+                >알람 팝업 닫기</a
+            >
+        </div>
+        <!-- //vpopup -->
+
+        <script type="text/javascript">
+            var timeoutId
+            var now
+            var $this /* 접근성 : 부모창 포커스 수정 2020.02.04 */
+
+            $(window).load(function () {
+                //alert팝업 이벤트 제거
+                $('.alertPopBt').off('click')
+            })
+
+            /* $('.btn_pop').click(function() {
+	var obj = $(this).attr("href");
+	pop_open(obj);
+	return false;
+});
+ */
+            var focusId = ''
+
+            $('.vpopup .pop_close').click(function () {
+                var obj = $(this).closest('.vpopup')
+
+                newAlertClose(obj)
+                $('.vpopup , .vvpopup_mask').fadeOut()
+                return false
+            })
+
+            function pop_open(obj) {
+                $(obj).css('opacity', '0').show()
+
+                var popLeft = $(window).scrollLeft() + ($(window).width() - $(obj).outerWidth()) / 2
+                var popTop = $(window).scrollTop() + ($(window).height() - $(obj).outerHeight()) / 2
+
+                if (popLeft < 0) {
+                    popLeft = 0
+                }
+                if (popTop < 0) {
+                    popTop = 0
+                }
+                $('.vvpopup_mask').fadeIn()
+                $(obj).hide().css('opacity', '1')
+                $(obj).css({ left: popLeft, top: popTop }).fadeIn().addClass('on')
+            }
+            function newAlertClose(obj) {
+                $(obj).removeClass('on')
+                $('body').removeAttr('style')
+                if (focusId != '') {
+                    $(focusId).focus()
+                }
+                //$('.btn_pop').focus();
+            }
+
+            function alert(msg, THIS) {
+                $this = $(THIS)
+                //alert팝업
+                if (msg == null || msg == '') {
+                    $('#alertTit').text(' ')
+                }
+                $('#alertTit').html(msg)
+                if (isWeb == true && isTabl == false && isMobile == false) {
+                    $('.alert-wrap.loginAlert').stop().fadeIn(350)
+                    $('.alertPop').focus()
+                } else if (isWeb == false && isTabl == true && isMobile == false) {
+                    $('.alert-wrap.loginAlert').css('display', 'block')
+                    $('.alert-wrap.loginAlert .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                } else if (isWeb == false && isTabl == false && isMobile == true) {
+                    $('.alert-wrap.loginAlert').css('display', 'block')
+                    $('.alert-wrap.loginAlert .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                }
+            }
+
+            function alert2(msg, focId) {
+                focusId = focId
+                $this = $(focId)
+                //alert팝업
+                if (msg == null || msg == '') {
+                    $('#newAlertTit').text(' ')
+                }
+                $('#newAlertTit').html(msg)
+                if (isWeb == true && isTabl == false && isMobile == false) {
+                    $('#alertTit').html(msg)
+                    $('.alert-wrap.loginAlert').stop().fadeIn(350)
+                    $('.alertPop').focus()
+                } else if (isWeb == false && isTabl == true && isMobile == false) {
+                    $('#alertTit').html(msg)
+                    $('.alert-wrap.loginAlert').css('display', 'block')
+                    $('.alert-wrap.loginAlert .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                } else if (isWeb == false && isTabl == false && isMobile == true) {
+                    pop_open('#vpop_con', focusId)
+                }
+            }
+
+            function openDivConfirm2(msg, okUrl, THIS, noUrl) {
+                //focusId = focId;
+                //alert팝업
+                if (msg == null || msg == '') {
+                    $('#newAlertTit2').text(' ')
+                }
+
+                $this = $(THIS)
+
+                $('#newAlertTit2').html(msg)
+
+                $('#confirmOk1').attr('onclick', okUrl)
+                if (noUrl != '') {
+                    $('#confirmCnl1').attr('onclick', noUrl)
+                }
+                if (isWeb == true || isTabl == true) {
+                    $('#confirmTit').html(msg)
+
+                    $('#confirmOk').attr('onclick', okUrl)
+                    if (noUrl != '') {
+                        $('#confirmCnl').attr('onclick', noUrl)
+                    }
+                }
+                if (isWeb == true && isTabl == false && isMobile == false) {
+                    $('.alert-wrap.loginAlert2').stop().fadeIn(350)
+                    $('.alertPop').focus()
+                } else if (isWeb == false && isTabl == true && isMobile == false) {
+                    $('.alert-wrap.loginAlert2').css('display', 'block')
+                    $('.alert-wrap.loginAlert2 .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert2 .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert2 .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                } else if (isWeb == false && isTabl == false && isMobile == true) {
+                    pop_open('#vpop_con2', '')
+                }
+            }
+
+            function openDivConfirm(msg, okUrl, THIS, noUrl) {
+                //alert팝업
+                if (msg == null || msg == '') {
+                    $('#confirmTit').text(' ')
+                }
+                $this = $(THIS)
+
+                $('#confirmTit').html(msg)
+                $('#confirmOk').attr('href', okUrl)
+                if (noUrl != '') {
+                    $('#confirmCnl').attr('href', noUrl)
+                }
+                if (isWeb == true || isTabl == true) {
+                    $('#confirmTit').html(msg)
+
+                    $('#confirmOk').attr('onclick', okUrl)
+                    if (noUrl != '') {
+                        $('#confirmCnl').attr('onclick', noUrl)
+                    }
+                }
+                if (isWeb == true && isTabl == false && isMobile == false) {
+                    $('.alert-wrap.loginAlert2').stop().fadeIn(350)
+                    $('.alertPop').focus()
+                } else if (isWeb == false && isTabl == true && isMobile == false) {
+                    $('.alert-wrap.loginAlert2').css('display', 'block')
+                    $('.alert-wrap.loginAlert2 .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert2 .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert2 .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                } else if (isWeb == false && isTabl == false && isMobile == true) {
+                    $('.alert-wrap.loginAlert2').css('display', 'block')
+                    $('.alert-wrap.loginAlert2 .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert2 .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert2 .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                }
+            }
+            /* openDivConfirm 에서  특정 문구만 제거
+             * 제외사유 : PG충전에서 confirmOk2() 를 두 번호출하도록 되어 있어, PG화면이 정상적으로 뜬 후,  다시 흰 화면이 뜨도록 처리됨
+             * 적용제외 코드 : $("#confirmOk").attr("href", okUrl);
+             * 적용화면 : 신용카드 결재충전
+             * 2020.04.02 송준희
+             */
+            function openDivConfirm3(msg, okUrl, THIS, noUrl) {
+                //alert팝업
+                if (msg == null || msg == '') {
+                    $('#confirmTit').text(' ')
+                }
+                $this = $(THIS)
+
+                $('#confirmTit').html(msg)
+                $('#confirmOk').attr('href', okUrl)
+                if (noUrl != '') {
+                    $('#confirmCnl').attr('href', noUrl)
+                }
+                if (isWeb == true || isTabl == true) {
+                    $('#confirmTit').html(msg)
+
+                    //$("#confirmOk").attr("onclick", okUrl); 이 문구가 있으면 PG충전,PG충전취소 시 confirmOk2()를 두 번호출하도록 되어 있어, PG화면이 정상적으로 뜬 후  다시 흰 화면이 뜨도록 처리됨
+                    if (noUrl != '') {
+                        $('#confirmCnl').attr('onclick', noUrl)
+                    }
+                }
+                if (isWeb == true && isTabl == false && isMobile == false) {
+                    $('.alert-wrap.loginAlert2').stop().fadeIn(350)
+                    $('.alertPop').focus()
+                } else if (isWeb == false && isTabl == true && isMobile == false) {
+                    $('.alert-wrap.loginAlert2').css('display', 'block')
+                    $('.alert-wrap.loginAlert2 .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert2 .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert2 .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                } else if (isWeb == false && isTabl == false && isMobile == true) {
+                    $('.alert-wrap.loginAlert2').css('display', 'block')
+                    $('.alert-wrap.loginAlert2 .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert2 .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert2 .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                }
+            }
+            /* 모바일 고도화 작업 이전 버전 */
+            function openDivConfirm_old(msg, okUrl, noUrl) {
+                //alert팝업
+                if (msg == null || msg == '') {
+                    $('#confirmTit').text(' ')
+                }
+
+                $('#confirmTit').html(msg)
+                $('#confirmOk').attr('href', okUrl)
+                if (noUrl != '') {
+                    $('#confirmCnl').attr('href', noUrl)
+                }
+
+                if (isWeb == true && isTabl == false && isMobile == false) {
+                    $('.alert-wrap.loginAlert2').stop().fadeIn(350)
+                } else if (isWeb == false && isTabl == true && isMobile == false) {
+                    $('.alert-wrap.loginAlert2').css('display', 'block')
+                    $('.alert-wrap.loginAlert2 .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert2 .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert2 .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                } else if (isWeb == false && isTabl == false && isMobile == true) {
+                    $('.alert-wrap.loginAlert2').css('display', 'block')
+                    $('.alert-wrap.loginAlert2 .alertPop').css(
+                        'top',
+                        -($('.alert-wrap.loginAlert2 .alertPop').height() + 50)
+                    )
+                    TweenMax.to($('.alert-wrap.loginAlert2 .alertPop'), 1.2, { top: 0, ease: Power3.easeOut })
+                }
+            }
+
+            /* 접근성 : 부모창 포커스 수정 2020.02.04 */
+            $('#confirmCnl').click(function () {
+                $this.focus()
+            })
+
+            $('#divAlert').click(function () {
+                $this.focus()
+            })
+        </script>
+
+        <script type="text/javascript">
+            ALK2txvdLfuTS()
+        </script>
+    </body>
+</html>
